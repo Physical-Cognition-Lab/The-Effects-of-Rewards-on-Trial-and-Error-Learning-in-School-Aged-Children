@@ -1,0 +1,995 @@
+PID,DATE,Q-KEY,PAGE,"QUESTION ID",QUESTION,ANSWER,VALUE
+642,07-03-2022,QFP,1,1,day_dob,1,0
+642,07-03-2022,QFP,1,1,month_dob,1,0
+642,07-03-2022,QFP,1,1,year_dob,2012,0
+642,07-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+642,07-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",test,0
+642,07-03-2022,QFP,1,4,"independent dragging",Oui,0
+642,07-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",test,0
+642,07-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?","Préfère ne pas répondre",2
+642,07-03-2022,SDQ,1,1,"ladder community",5,5
+642,07-03-2022,SDQ,2,1,"ladder people in France",,0
+642,07-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+642,07-03-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+642,07-03-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+642,07-03-2022,SDQ,4,1,"Nombre de personnes",,0
+642,07-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",,0
+642,07-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",,0
+642,07-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+642,07-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+642,07-03-2022,SDQ,4,1,"Nombre de personnes",,0
+642,07-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",,0
+642,07-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",,0
+642,07-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+642,07-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+642,07-03-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?",Jamais,4
+642,07-03-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Mauvais,4
+642,07-03-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Cochez toutes les cases",Array,0
+642,07-03-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+642,07-03-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+642,07-03-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+642,07-03-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+642,07-03-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",5,0
+642,07-03-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+642,07-03-2022,VG,1,10,"Quel âge as-tu ?",8,0
+642,07-03-2022,VG,1,11,"Dans quel pays habites-tu ?",test,0
+642,07-03-2022,VG,1,12,Sexe,"Préfère ne pas dire",3
+645,07-03-2022,QFP,1,1,day_dob,1,0
+645,07-03-2022,QFP,1,1,month_dob,1,0
+645,07-03-2022,QFP,1,1,year_dob,2011,0
+645,07-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+645,07-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",test,0
+645,07-03-2022,QFP,1,4,"independent dragging",Oui,0
+645,07-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",test,0
+645,07-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?","Préfère ne pas répondre",2
+645,07-03-2022,SDQ,1,1,"ladder community",,0
+645,07-03-2022,SDQ,2,1,"ladder people in France",,0
+645,07-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+645,07-03-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+645,07-03-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+645,07-03-2022,SDQ,4,1,"Nombre de personnes",,0
+645,07-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",,0
+645,07-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",,0
+645,07-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+645,07-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+646,08-03-2022,QFP,1,1,day_dob,1,0
+646,08-03-2022,QFP,1,1,month_dob,1,0
+646,08-03-2022,QFP,1,1,year_dob,2011,0
+646,08-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+646,08-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",test,0
+646,08-03-2022,QFP,1,4,"independent dragging",Oui,0
+646,08-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",test,0
+646,08-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+646,08-03-2022,SDQ,1,1,"ladder community",,0
+646,08-03-2022,SDQ,2,1,"ladder people in France",,0
+646,08-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+646,08-03-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+646,08-03-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+646,08-03-2022,SDQ,4,1,"Nombre de personnes",,0
+646,08-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",,0
+646,08-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",,0
+646,08-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+646,08-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+649,09-03-2022,QFP,1,1,day_dob,1,0
+649,09-03-2022,QFP,1,1,month_dob,1,0
+649,09-03-2022,QFP,1,1,year_dob,2011,0
+649,09-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+649,09-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",test,0
+649,09-03-2022,QFP,1,4,"independent dragging",Oui,0
+649,09-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",test,0
+649,09-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+649,09-03-2022,SDQ,1,1,"ladder community",,0
+649,09-03-2022,SDQ,2,1,"ladder people in France",,0
+651,10-03-2022,QFP,1,1,day_dob,1,0
+651,10-03-2022,QFP,1,1,month_dob,1,0
+651,10-03-2022,QFP,1,1,year_dob,2011,0
+651,10-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+651,10-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",test,0
+651,10-03-2022,QFP,1,4,"independent dragging",Oui,0
+651,10-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",test,0
+651,10-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+651,10-03-2022,SDQ,1,1,"ladder community",,0
+651,10-03-2022,SDQ,2,1,"ladder people in France",,0
+651,10-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+651,10-03-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+651,10-03-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+651,10-03-2022,SDQ,4,1,"Nombre de personnes",,0
+651,10-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",,0
+651,10-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",,0
+651,10-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+651,10-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+651,10-03-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par an",3
+651,10-03-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Bon,2
+651,10-03-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+651,10-03-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+651,10-03-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+651,10-03-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+651,10-03-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+651,10-03-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",5,0
+651,10-03-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+651,10-03-2022,VG,1,10,"Quel âge as-tu ?",test,0
+651,10-03-2022,VG,1,11,"Dans quel pays habites-tu ?",test,0
+651,10-03-2022,VG,1,12,Sexe,"Préfère ne pas dire",3
+652,11-03-2022,QFP,1,1,day_dob,5,0
+652,11-03-2022,QFP,1,1,month_dob,5,0
+652,11-03-2022,QFP,1,1,year_dob,2012,0
+652,11-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+652,11-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",CM1,0
+652,11-03-2022,QFP,1,4,"independent dragging",Oui,0
+652,11-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",France,0
+652,11-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+652,11-03-2022,SDQ,1,1,"ladder community",5,5
+652,11-03-2022,SDQ,2,1,"ladder people in France",5,5
+652,11-03-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+652,11-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+652,11-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+652,11-03-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+652,11-03-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+652,11-03-2022,SDQ,4,1,"Nombre de personnes",,0
+652,11-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",,0
+652,11-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",,0
+652,11-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+652,11-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+652,23-03-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?",Jamais,4
+652,23-03-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Mauvais,4
+652,23-03-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",9,0
+652,23-03-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",8,0
+652,23-03-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",8,0
+652,23-03-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",10,0
+652,23-03-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",10,0
+652,23-03-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Oui,0
+652,23-03-2022,VG,1,10,"Quel âge as-tu ?","9 ans",0
+652,23-03-2022,VG,1,11,"Dans quel pays habites-tu ?",France,0
+652,23-03-2022,VG,1,12,Sexe,Garçon,1
+665,20-03-2022,QFP,1,1,day_dob,9,0
+665,20-03-2022,QFP,1,1,month_dob,10,0
+665,20-03-2022,QFP,1,1,year_dob,2010,0
+665,20-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+665,20-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",6ème,0
+665,20-03-2022,QFP,1,4,"independent dragging",Oui,0
+665,20-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",Singapour,0
+665,20-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+665,20-03-2022,SDQ,1,1,"ladder community",4,4
+665,20-03-2022,SDQ,2,1,"ladder people in France",3,3
+665,20-03-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+665,20-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+665,20-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+665,20-03-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps plein",0
+665,20-03-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",enseignement,0
+665,20-03-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)","professeur des écoles",0
+665,20-03-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","De 25 000 € à 34 999 €",4
+665,20-03-2022,SDQ,4,1,"Nombre de personnes",5,0
+665,20-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",3,0
+665,20-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+665,20-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+665,20-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Locataire,1
+665,20-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+665,20-03-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Plus de 100 000 € ",8
+665,20-03-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","3 à 6 mois",2
+665,20-03-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","Ne sais pas",9
+665,20-03-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Plus de 500 000 €",8
+665,20-03-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par semaine",1
+665,20-03-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?","Plutôt bon",1
+665,20-03-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+665,20-03-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",6,0
+665,20-03-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",8,0
+665,20-03-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",9,0
+665,20-03-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",3,0
+665,20-03-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",7,0
+665,20-03-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+665,20-03-2022,VG,1,10,"Quel âge as-tu ?","11 ans",0
+665,20-03-2022,VG,1,11,"Dans quel pays habites-tu ?",singapour,0
+665,20-03-2022,VG,1,12,Sexe,Garçon,1
+669,21-03-2022,QFP,1,1,day_dob,12,0
+669,21-03-2022,QFP,1,1,month_dob,08,0
+669,21-03-2022,QFP,1,1,year_dob,2010,0
+669,21-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+669,21-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",6e,0
+669,21-03-2022,QFP,1,4,"independent dragging",Oui,0
+669,21-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",france,0
+669,21-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Fille,1
+669,21-03-2022,SDQ,1,1,"ladder community",5,5
+669,21-03-2022,SDQ,2,1,"ladder people in France",4,4
+669,21-03-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Secondaire,1
+669,21-03-2022,SDQ,1,1,"ladder community",7,7
+669,21-03-2022,SDQ,2,1,"ladder people in France",2,2
+669,21-03-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+669,21-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+669,21-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+669,21-03-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps plein",0
+669,21-03-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",Conseil,0
+669,21-03-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)","Senior manager",0
+669,21-03-2022,SDQ,4,1,"Nombre de personnes",,0
+669,21-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",,0
+669,21-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",,0
+669,21-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+669,21-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+669,21-03-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Tous les jours",0
+669,21-03-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Bon,2
+669,21-03-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+669,21-03-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",9,0
+669,21-03-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",10,0
+669,21-03-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",9,0
+669,21-03-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",8,0
+669,21-03-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",8,0
+669,21-03-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Oui,0
+669,21-03-2022,VG,1,10,"Quel âge as-tu ?",11,0
+669,21-03-2022,VG,1,11,"Dans quel pays habites-tu ?",france,0
+669,21-03-2022,VG,1,12,Sexe,Fille,2
+671,23-03-2022,QFP,1,1,day_dob,08,0
+671,23-03-2022,QFP,1,1,month_dob,12,0
+671,23-03-2022,QFP,1,1,year_dob,2009,0
+671,23-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+671,23-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",5,0
+671,23-03-2022,QFP,1,4,"independent dragging",Oui,0
+671,23-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",France,0
+671,23-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Fille,1
+671,23-03-2022,SDQ,1,1,"ladder community",,0
+671,23-03-2022,SDQ,2,1,"ladder people in France",,0
+671,23-03-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+671,23-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+671,23-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+671,23-03-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+671,23-03-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+671,23-03-2022,SDQ,4,1,"Nombre de personnes",,0
+671,23-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",,0
+671,23-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",,0
+671,23-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+671,23-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+671,23-03-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?",Jamais,4
+671,23-03-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Mauvais,4
+671,23-03-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",10,0
+671,23-03-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",10,0
+671,23-03-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",10,0
+671,23-03-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",1,0
+671,23-03-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",5,0
+671,23-03-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+671,23-03-2022,VG,1,10,"Quel âge as-tu ?",12,0
+671,23-03-2022,VG,1,11,"Dans quel pays habites-tu ?",France,0
+671,23-03-2022,VG,1,12,Sexe,Fille,2
+674,24-03-2022,QFP,1,1,day_dob,27,0
+674,24-03-2022,QFP,1,1,month_dob,03,0
+674,24-03-2022,QFP,1,1,year_dob,2009,0
+674,24-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+674,24-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?","5ème ",0
+674,24-03-2022,QFP,1,4,"independent dragging",Oui,0
+674,24-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",France,0
+674,24-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+674,24-03-2022,SDQ,1,1,"ladder community",5,5
+675,24-03-2022,QFP,1,1,day_dob,27,0
+675,24-03-2022,QFP,1,1,month_dob,03,0
+675,24-03-2022,QFP,1,1,year_dob,2009,0
+675,24-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+675,24-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?","5ème ",0
+675,24-03-2022,QFP,1,4,"independent dragging",Oui,0
+675,24-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",France,0
+675,24-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+675,24-03-2022,SDQ,1,1,"ladder community",3,3
+675,24-03-2022,SDQ,2,1,"ladder people in France",,0
+675,24-03-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+675,24-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+675,24-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+675,24-03-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps plein",0
+675,24-03-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",Finance,0
+675,24-03-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)","Présidente - Société de gestion",0
+675,24-03-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","Plus de 100 000 €",8
+675,24-03-2022,SDQ,4,1,"Nombre de personnes",5,0
+675,24-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",3,0
+675,24-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+675,24-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+675,24-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+675,24-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+675,24-03-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Plus de 100 000 € ",8
+675,24-03-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","Plus d’1 an",4
+675,24-03-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","De 200 000 € à 499 999 €",7
+675,24-03-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","De 100 000 € à 199 999 €",6
+675,24-03-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par semaine",1
+675,24-03-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Bon,2
+675,24-03-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+675,24-03-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",8,0
+675,24-03-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",8,0
+675,24-03-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",8,0
+675,24-03-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",9,0
+675,24-03-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",10,0
+675,24-03-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+675,24-03-2022,VG,1,10,"Quel âge as-tu ?","12 ans",0
+675,24-03-2022,VG,1,11,"Dans quel pays habites-tu ?",France,0
+675,24-03-2022,VG,1,12,Sexe,Garçon,1
+676,26-03-2022,QFP,1,1,day_dob,17,0
+676,26-03-2022,QFP,1,1,month_dob,03,0
+676,26-03-2022,QFP,1,1,year_dob,2014,0
+676,26-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+676,26-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",ce1,0
+676,26-03-2022,QFP,1,4,"independent dragging",Oui,0
+676,26-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",FRANCE,0
+676,26-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+676,26-03-2022,SDQ,1,1,"ladder community",4,4
+676,26-03-2022,SDQ,2,1,"ladder people in France",4,4
+676,26-03-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+676,26-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+676,26-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+676,26-03-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps plein",0
+676,26-03-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+676,26-03-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+676,26-03-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","Ne souhaite pas répondre",10
+676,26-03-2022,SDQ,4,1,"Nombre de personnes",4,0
+676,26-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",2,0
+676,26-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+676,26-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+676,26-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+676,26-03-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par semaine",1
+676,26-03-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?","Plutôt bon",1
+676,26-03-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+676,26-03-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+676,26-03-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",10,0
+676,26-03-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",9,0
+676,26-03-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+676,26-03-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",10,0
+676,26-03-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Oui,0
+676,26-03-2022,VG,1,10,"Quel âge as-tu ?",8,0
+676,26-03-2022,VG,1,11,"Dans quel pays habites-tu ?",FRANCE,0
+676,26-03-2022,VG,1,12,Sexe,"Préfère ne pas dire",3
+681,28-03-2022,QFP,1,1,day_dob,14,0
+681,28-03-2022,QFP,1,1,month_dob,12,0
+681,28-03-2022,QFP,1,1,year_dob,2010,0
+681,28-03-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+681,28-03-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",6émé,0
+681,28-03-2022,QFP,1,4,"independent dragging",Oui,0
+681,28-03-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",France,0
+681,28-03-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+681,28-03-2022,SDQ,1,1,"ladder community",5,5
+681,28-03-2022,SDQ,2,1,"ladder people in France",7,7
+681,28-03-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+681,28-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+681,28-03-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+681,28-03-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Demandeur d’emploi",3
+681,28-03-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......","Service à la famille",0
+681,28-03-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+681,28-03-2022,SDQ,4,1,"Nombre de personnes",5,0
+681,28-03-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",3,0
+681,28-03-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+681,28-03-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",1,0
+681,28-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+681,28-03-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+681,28-03-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Ne souhaite pas répondre",10
+681,28-03-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","De 5 000 € à 9 999 €",2
+681,28-03-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Ne souhaite pas répondre",10
+681,28-03-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","Ne souhaite pas répondre",10
+681,28-03-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Ne souhaite pas répondre",10
+681,28-03-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?",Jamais,4
+681,28-03-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Mauvais,4
+681,28-03-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+681,28-03-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+681,28-03-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+681,28-03-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+681,28-03-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",5,0
+681,28-03-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Oui,0
+681,28-03-2022,VG,1,10,"Quel âge as-tu ?",11,0
+681,28-03-2022,VG,1,11,"Dans quel pays habites-tu ?",France,0
+681,28-03-2022,VG,1,12,Sexe,Garçon,1
+685,01-04-2022,QFP,1,1,day_dob,18,0
+685,01-04-2022,QFP,1,1,month_dob,08,0
+685,01-04-2022,QFP,1,1,year_dob,2013,0
+685,01-04-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+685,01-04-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",CE2,0
+685,01-04-2022,QFP,1,4,"independent dragging",Oui,0
+685,01-04-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?","Grande Bretagne",0
+685,01-04-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Fille,1
+685,01-04-2022,SDQ,1,1,"ladder community",3,3
+685,01-04-2022,SDQ,2,1,"ladder people in France",3,3
+685,01-04-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+685,01-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+685,01-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+685,01-04-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+685,01-04-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+685,01-04-2022,SDQ,4,1,"Nombre de personnes",4,0
+685,01-04-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",2,0
+685,01-04-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+685,01-04-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+685,01-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+685,01-04-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Tous les jours",0
+685,01-04-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?","Très bon",0
+685,01-04-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+685,01-04-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",10,0
+685,01-04-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",10,0
+685,01-04-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",10,0
+685,01-04-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",10,0
+685,01-04-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",10,0
+685,01-04-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+685,01-04-2022,VG,1,10,"Quel âge as-tu ?",8,0
+685,01-04-2022,VG,1,11,"Dans quel pays habites-tu ?","Grande Bretagne",0
+685,01-04-2022,VG,1,12,Sexe,Fille,2
+701,13-04-2022,QFP,1,1,day_dob,07,0
+701,13-04-2022,QFP,1,1,month_dob,10,0
+701,13-04-2022,QFP,1,1,year_dob,2010,0
+701,13-04-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+701,13-04-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",6ème,0
+701,13-04-2022,QFP,1,4,"independent dragging",Oui,0
+701,13-04-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",France,0
+701,13-04-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Fille,1
+701,13-04-2022,SDQ,1,1,"ladder community",,0
+701,13-04-2022,SDQ,2,1,"ladder people in France",,0
+701,13-04-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Secondaire,1
+701,13-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+701,13-04-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+701,13-04-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+701,13-04-2022,SDQ,4,1,"Nombre de personnes",6,0
+701,13-04-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",4,0
+701,13-04-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+701,13-04-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",1,0
+701,13-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+701,13-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+701,13-04-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par semaine",1
+701,13-04-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Bon,2
+701,13-04-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+701,13-04-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",10,0
+701,13-04-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",3,0
+701,13-04-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",7,0
+701,13-04-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",6,0
+701,13-04-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",10,0
+701,13-04-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+701,13-04-2022,VG,1,10,"Quel âge as-tu ?","11 ans ",0
+701,13-04-2022,VG,1,11,"Dans quel pays habites-tu ?","France ",0
+701,13-04-2022,VG,1,12,Sexe,Fille,2
+708,22-04-2022,QFP,1,1,day_dob,1,0
+708,22-04-2022,QFP,1,1,month_dob,7,0
+708,22-04-2022,QFP,1,1,year_dob,2006,0
+708,22-04-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+708,22-04-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",test,0
+708,22-04-2022,QFP,1,4,"independent dragging",Oui,0
+708,22-04-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",test,0
+708,22-04-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+708,22-04-2022,SDQ,1,1,"ladder community",,0
+708,22-04-2022,SDQ,2,1,"ladder people in France",,0
+708,22-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+708,22-04-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+708,22-04-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+708,22-04-2022,SDQ,4,1,"Nombre de personnes",,0
+708,22-04-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",,0
+708,22-04-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",,0
+708,22-04-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+708,22-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+708,22-04-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?",Jamais,4
+708,22-04-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?","Plutôt mauvais",3
+708,22-04-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+708,22-04-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+708,22-04-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+708,22-04-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+708,22-04-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+708,22-04-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",5,0
+708,22-04-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+708,22-04-2022,VG,1,10,"Quel âge as-tu ?",test,0
+708,22-04-2022,VG,1,11,"Dans quel pays habites-tu ?",test,0
+708,22-04-2022,VG,1,12,Sexe,Garçon,1
+712,24-04-2022,QFP,1,1,day_dob,27,0
+712,24-04-2022,QFP,1,1,month_dob,6,0
+712,24-04-2022,QFP,1,1,year_dob,2006,0
+712,24-04-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+712,24-04-2022,QFP,1,3,"Dans quelle classe est votre enfant ?","year 11",0
+712,24-04-2022,QFP,1,4,"independent dragging",Oui,0
+712,24-04-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",UK,0
+712,24-04-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Fille,1
+712,24-04-2022,SDQ,1,1,"ladder community",,0
+712,24-04-2022,SDQ,2,1,"ladder people in France",,0
+712,24-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+712,24-04-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+712,24-04-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+712,24-04-2022,SDQ,4,1,"Nombre de personnes",,0
+712,24-04-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",,0
+712,24-04-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",,0
+712,24-04-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+712,24-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+712,24-04-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?",Jamais,4
+712,24-04-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?","Plutôt mauvais",3
+712,24-04-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+712,24-04-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",3,0
+712,24-04-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",9,0
+712,24-04-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+712,24-04-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",2,0
+712,24-04-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+712,24-04-2022,VG,1,10,"Quel âge as-tu ?",15,0
+712,24-04-2022,VG,1,11,"Dans quel pays habites-tu ?",UK,0
+712,24-04-2022,VG,1,12,Sexe,Fille,2
+713,24-04-2022,QFP,1,1,day_dob,8,0
+713,24-04-2022,QFP,1,1,month_dob,3,0
+713,24-04-2022,QFP,1,1,year_dob,2009,0
+713,24-04-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+713,24-04-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",5EME,0
+713,24-04-2022,QFP,1,4,"independent dragging",Oui,0
+713,24-04-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?","France ( 33)",0
+713,24-04-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Fille,1
+713,24-04-2022,SDQ,1,1,"ladder community",4,4
+713,24-04-2022,SDQ,2,1,"ladder people in France",3,3
+713,24-04-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Secondaire,1
+713,24-04-2022,SDQ,2,1,"ladder people in France",3,3
+713,24-04-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Secondaire,1
+713,24-04-2022,SDQ,1,1,"ladder community",3,3
+713,24-04-2022,SDQ,1,1,"ladder community",3,3
+713,24-04-2022,SDQ,1,1,"ladder community",3,3
+713,24-04-2022,SDQ,1,1,"ladder community",3,3
+713,24-04-2022,SDQ,2,1,"ladder people in France",3,3
+713,24-04-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+713,24-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+713,24-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+713,24-04-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps plein",0
+713,24-04-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",Défense,0
+713,24-04-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)","Directeur adjoint d'un centre",0
+713,24-04-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","De 75 000 € à 99 999 €",7
+713,24-04-2022,SDQ,4,1,"Nombre de personnes",4,0
+713,24-04-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",2,0
+713,24-04-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+713,24-04-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+713,24-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+713,24-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+713,24-04-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Plus de 100 000 € ",8
+713,24-04-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","7 à 12 mois",3
+713,24-04-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","De 10 000 € à 19 999 €",3
+713,24-04-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","De 100 000 € à 199 999 €",6
+713,24-04-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par an",3
+713,24-04-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?","Plutôt bon",1
+713,24-04-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+713,24-04-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",9,0
+713,24-04-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",9,0
+713,24-04-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",9,0
+713,24-04-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",10,0
+713,24-04-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",7,0
+713,24-04-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Oui,0
+713,24-04-2022,VG,1,10,"Quel âge as-tu ?","13 ans",0
+713,24-04-2022,VG,1,11,"Dans quel pays habites-tu ?",France,0
+713,24-04-2022,VG,1,12,Sexe,Fille,2
+713,24-04-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par an",3
+713,24-04-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?","Plutôt bon",1
+713,24-04-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+713,24-04-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",9,0
+713,24-04-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",9,0
+713,24-04-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",9,0
+713,24-04-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",10,0
+713,24-04-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",7,0
+713,24-04-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Oui,0
+713,24-04-2022,VG,1,10,"Quel âge as-tu ?","13 ans",0
+713,24-04-2022,VG,1,11,"Dans quel pays habites-tu ?",France,0
+713,24-04-2022,VG,1,12,Sexe,Fille,2
+714,24-04-2022,QFP,1,1,day_dob,24,0
+714,24-04-2022,QFP,1,1,month_dob,12,0
+714,24-04-2022,QFP,1,1,year_dob,2015,0
+714,24-04-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+714,24-04-2022,QFP,1,3,"Dans quelle classe est votre enfant ?"," year1",0
+714,24-04-2022,QFP,1,4,"independent dragging",Oui,0
+714,24-04-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",uk,0
+714,24-04-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+714,24-04-2022,SDQ,1,1,"ladder community",6,6
+714,24-04-2022,SDQ,2,1,"ladder people in France",,0
+714,24-04-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+714,24-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+714,24-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+714,24-04-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps partiel",1
+714,24-04-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",education,0
+714,24-04-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",institutrice,0
+714,24-04-2022,SDQ,4,1,"Nombre de personnes",4,0
+714,24-04-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",2,0
+714,24-04-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+714,24-04-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+714,24-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Locataire,1
+714,24-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+714,24-04-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","De 5 000 € à 11 999 €",1
+714,24-04-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","1 à 2 mois",1
+714,24-04-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","De 5 000 € à 9 999 €",2
+714,24-04-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","De 500 € à 4 999 €",1
+714,24-04-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par an",3
+714,24-04-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Bon,2
+714,24-04-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+714,24-04-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",6,0
+714,24-04-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",8,0
+714,24-04-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",8,0
+714,24-04-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",10,0
+714,24-04-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",9,0
+714,24-04-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+714,24-04-2022,VG,1,10,"Quel âge as-tu ?",6,0
+714,24-04-2022,VG,1,11,"Dans quel pays habites-tu ?",uk,0
+714,24-04-2022,VG,1,12,Sexe,Garçon,1
+715,26-04-2022,QFP,1,1,day_dob,08,0
+715,26-04-2022,QFP,1,1,month_dob,09,0
+715,26-04-2022,QFP,1,1,year_dob,2009,0
+715,26-04-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+715,26-04-2022,QFP,1,3,"Dans quelle classe est votre enfant ?","5 ème",0
+715,26-04-2022,QFP,1,4,"independent dragging",Oui,0
+715,26-04-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",france,0
+715,26-04-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Fille,1
+715,26-04-2022,SDQ,1,1,"ladder community",4,4
+715,26-04-2022,SDQ,2,1,"ladder people in France",4,4
+715,26-04-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Secondaire,1
+715,26-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu",Baccalauréat,2
+715,26-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+715,26-04-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps partiel",1
+715,26-04-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",animatrice,0
+715,26-04-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",animatrice,0
+715,26-04-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","Moins de 5000 €",0
+715,26-04-2022,SDQ,4,1,"Nombre de personnes",4,0
+715,26-04-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",2,0
+715,26-04-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+715,26-04-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+715,26-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+715,26-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+715,26-04-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Moins de 5 000 €",0
+715,26-04-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","Plus d’1 an",4
+715,26-04-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","De 500 € à 4 999 €",1
+715,26-04-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Moins de 500 €",0
+715,26-04-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par mois",2
+715,26-04-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Bon,2
+715,26-04-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+715,26-04-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",7,0
+715,26-04-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",8,0
+715,26-04-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+715,26-04-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",4,0
+715,26-04-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",3,0
+715,26-04-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+715,26-04-2022,VG,1,10,"Quel âge as-tu ?","12 ans et demi",0
+715,26-04-2022,VG,1,11,"Dans quel pays habites-tu ?",France,0
+715,26-04-2022,VG,1,12,Sexe,Fille,2
+724,27-04-2022,QFP,1,1,day_dob,15,0
+724,27-04-2022,QFP,1,1,month_dob,09,0
+724,27-04-2022,QFP,1,1,year_dob,2012,0
+724,27-04-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+724,27-04-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",cm1,0
+724,27-04-2022,QFP,1,4,"independent dragging",Oui,0
+724,27-04-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?","France ",0
+724,27-04-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+724,27-04-2022,SDQ,1,1,"ladder community",4,4
+724,27-04-2022,SDQ,2,1,"ladder people in France",4,4
+724,27-04-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Secondaire,1
+724,27-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu",Baccalauréat,2
+724,27-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+724,27-04-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps partiel",1
+724,27-04-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",Animateur,0
+724,27-04-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)","Animateur ",0
+724,27-04-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","Moins de 5000 €",0
+724,27-04-2022,SDQ,4,1,"Nombre de personnes",4,0
+724,27-04-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",2,0
+724,27-04-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+724,27-04-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+724,27-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+724,27-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+724,27-04-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Moins de 5 000 €",0
+724,27-04-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","Plus d’1 an",4
+724,27-04-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","De 500 € à 4 999 €",1
+724,27-04-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Moins de 500 €",0
+728,28-04-2022,QFP,1,1,day_dob,15,0
+728,28-04-2022,QFP,1,1,month_dob,09,0
+728,28-04-2022,QFP,1,1,year_dob,2012,0
+728,28-04-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+728,28-04-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",CM1,0
+728,28-04-2022,QFP,1,4,"independent dragging",Oui,0
+728,28-04-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",FRANCE,0
+728,28-04-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+728,28-04-2022,SDQ,1,1,"ladder community",4,4
+728,28-04-2022,SDQ,2,1,"ladder people in France",4,4
+728,28-04-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Secondaire,1
+728,28-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu",Baccalauréat,2
+728,28-04-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+728,28-04-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps partiel",1
+728,28-04-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",ANIMATRICE,0
+728,28-04-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",ANIMATRICE,0
+728,28-04-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","Moins de 5000 €",0
+728,28-04-2022,SDQ,4,1,"Nombre de personnes",4,0
+728,28-04-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",2,0
+728,28-04-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+728,28-04-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+728,28-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+728,28-04-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+728,28-04-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Moins de 5 000 €",0
+728,28-04-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","Plus d’1 an",4
+728,28-04-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","De 500 € à 4 999 €",1
+728,28-04-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Moins de 500 €",0
+728,28-04-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par semaine",1
+728,28-04-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?","Très bon",0
+728,28-04-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+728,28-04-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",6,0
+728,28-04-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",9,0
+728,28-04-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",3,0
+728,28-04-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",8,0
+728,28-04-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",7,0
+728,28-04-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+728,28-04-2022,VG,1,10,"Quel âge as-tu ?",9,0
+728,28-04-2022,VG,1,11,"Dans quel pays habites-tu ?",FRANCE,0
+728,28-04-2022,VG,1,12,Sexe,Garçon,1
+734,01-05-2022,QFP,1,1,day_dob,6,0
+734,01-05-2022,QFP,1,1,month_dob,2,0
+734,01-05-2022,QFP,1,1,year_dob,2008,0
+734,01-05-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+734,01-05-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",4eme,0
+734,01-05-2022,QFP,1,4,"independent dragging",Oui,0
+734,01-05-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",France,0
+734,01-05-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Fille,1
+734,01-05-2022,SDQ,1,1,"ladder community",4,4
+734,01-05-2022,SDQ,2,1,"ladder people in France",3,3
+734,01-05-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+734,01-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+734,01-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+734,01-05-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps partiel",1
+734,01-05-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",psychologie,0
+734,01-05-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+734,01-05-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","De 12 000 € à 15 999€",2
+734,01-05-2022,SDQ,4,1,"Nombre de personnes",3,0
+734,01-05-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",2,0
+734,01-05-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",1,0
+734,01-05-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",1,0
+734,01-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+734,01-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+734,01-05-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","De 35 000 € à 49 999 €",5
+734,01-05-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","7 à 12 mois",3
+734,01-05-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","De 20 000 € à 49 999 €",4
+734,01-05-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","De 20 000 € à 49 999 €",4
+734,01-05-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par an",3
+734,01-05-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Bon,2
+734,01-05-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+734,01-05-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",7,0
+734,01-05-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+734,01-05-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",7,0
+734,01-05-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",2,0
+734,01-05-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",6,0
+734,01-05-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+734,01-05-2022,VG,1,10,"Quel âge as-tu ?",14,0
+734,01-05-2022,VG,1,11,"Dans quel pays habites-tu ?",france,0
+734,01-05-2022,VG,1,12,Sexe,Fille,2
+736,01-05-2022,QFP,1,1,day_dob,03,0
+736,01-05-2022,QFP,1,1,month_dob,04,0
+736,01-05-2022,QFP,1,1,year_dob,2016,0
+736,01-05-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+736,01-05-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",CP,0
+736,01-05-2022,QFP,1,4,"independent dragging",Oui,0
+736,01-05-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",France,0
+736,01-05-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Fille,1
+736,01-05-2022,SDQ,1,1,"ladder community",8,8
+736,01-05-2022,SDQ,2,1,"ladder people in France",8,8
+736,01-05-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+736,01-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu",Autre,6
+736,01-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",Doctorat,0
+736,01-05-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps plein",0
+736,01-05-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......","Enseignement et recherche",0
+736,01-05-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)","Professeur des universités",0
+736,01-05-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","Ne souhaite pas répondre",10
+736,01-05-2022,SDQ,4,1,"Nombre de personnes",4,0
+736,01-05-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",2,0
+736,01-05-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+736,01-05-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+736,01-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+736,01-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+736,01-05-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Ne souhaite pas répondre",10
+736,01-05-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","7 à 12 mois",3
+736,01-05-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","Ne souhaite pas répondre",10
+736,01-05-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Ne souhaite pas répondre",10
+736,01-05-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?",Jamais,4
+736,01-05-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Mauvais,4
+736,01-05-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+736,01-05-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",7,0
+736,01-05-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",7,0
+736,01-05-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",8,0
+736,01-05-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+736,01-05-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",7,0
+736,01-05-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+736,01-05-2022,VG,1,10,"Quel âge as-tu ?",6,0
+736,01-05-2022,VG,1,11,"Dans quel pays habites-tu ?",FRANCE,0
+736,01-05-2022,VG,1,12,Sexe,Fille,2
+737,01-05-2022,QFP,1,1,day_dob,7,0
+737,01-05-2022,QFP,1,1,month_dob,5,0
+737,01-05-2022,QFP,1,1,year_dob,2015,0
+737,01-05-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+737,01-05-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",CP,0
+737,01-05-2022,QFP,1,4,"independent dragging",Oui,0
+737,01-05-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",FRANCE,0
+737,01-05-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+737,01-05-2022,SDQ,1,1,"ladder community",5,5
+737,01-05-2022,SDQ,2,1,"ladder people in France",3,3
+737,01-05-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+737,01-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+737,01-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+737,01-05-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps plein",0
+737,01-05-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+737,01-05-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+737,01-05-2022,SDQ,4,1,"Nombre de personnes",4,0
+737,01-05-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",2,0
+737,01-05-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+737,01-05-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+737,01-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+737,01-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+737,01-05-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Ne souhaite pas répondre",10
+737,01-05-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","Ne souhaite pas répondre",10
+737,01-05-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Ne souhaite pas répondre",10
+737,01-05-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?",Jamais,4
+737,01-05-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Mauvais,4
+737,01-05-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+737,01-05-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",7,0
+737,01-05-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",9,0
+737,01-05-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",8,0
+737,01-05-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+737,01-05-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",7,0
+737,01-05-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Oui,0
+737,01-05-2022,VG,1,10,"Quel âge as-tu ?",7,0
+737,01-05-2022,VG,1,11,"Dans quel pays habites-tu ?",FRANCE,0
+737,01-05-2022,VG,1,12,Sexe,Garçon,1
+738,01-05-2022,QFP,1,1,day_dob,14,0
+738,01-05-2022,QFP,1,1,month_dob,04,0
+738,01-05-2022,QFP,1,1,year_dob,2016,0
+738,01-05-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+738,01-05-2022,QFP,1,3,"Dans quelle classe est votre enfant ?","dernière année maternelle",0
+738,01-05-2022,QFP,1,4,"independent dragging",Oui,0
+738,01-05-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",Italie,0
+738,01-05-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+738,01-05-2022,SDQ,1,1,"ladder community",3,3
+738,01-05-2022,SDQ,2,1,"ladder people in France",3,3
+738,01-05-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+738,01-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+738,01-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+738,01-05-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps plein",0
+738,01-05-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",Presse,0
+738,01-05-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+738,01-05-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","Ne sais pas",9
+738,01-05-2022,SDQ,4,1,"Nombre de personnes",3,0
+738,01-05-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",1,0
+738,01-05-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+738,01-05-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+738,01-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+738,01-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+738,01-05-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Ne sais pas",9
+738,01-05-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","3 à 6 mois",2
+738,01-05-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","Ne souhaite pas répondre",10
+738,01-05-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Ne souhaite pas répondre",10
+738,01-05-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?",Jamais,4
+738,01-05-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?","Très bon",0
+738,01-05-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+738,01-05-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+738,01-05-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+738,01-05-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+738,01-05-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+738,01-05-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",5,0
+738,01-05-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+738,01-05-2022,VG,1,10,"Quel âge as-tu ?",6,0
+738,01-05-2022,VG,1,11,"Dans quel pays habites-tu ?",Italie,0
+738,01-05-2022,VG,1,12,Sexe,Garçon,1
+752,10-05-2022,QFP,1,1,day_dob,27,0
+752,10-05-2022,QFP,1,1,month_dob,03,0
+752,10-05-2022,QFP,1,1,year_dob,2010,0
+752,10-05-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Secondaire,1
+752,10-05-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",6e,0
+752,10-05-2022,QFP,1,4,"independent dragging",Oui,0
+752,10-05-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",France,0
+752,10-05-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+752,10-05-2022,SDQ,1,1,"ladder community",5,5
+752,10-05-2022,SDQ,2,1,"ladder people in France",5,5
+752,10-05-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+752,10-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+752,10-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+752,10-05-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps plein",0
+752,10-05-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......","Journalisme, urbanisme",0
+752,10-05-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)","Chef d'entreprise",0
+752,10-05-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","Ne souhaite pas répondre",10
+752,10-05-2022,SDQ,4,1,"Nombre de personnes",5,0
+752,10-05-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",3,0
+752,10-05-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+752,10-05-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+752,10-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+752,10-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+752,10-05-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Ne souhaite pas répondre",10
+752,10-05-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","3 à 6 mois",2
+752,10-05-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","Ne souhaite pas répondre",10
+752,10-05-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Ne souhaite pas répondre",10
+752,11-05-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par semaine",1
+752,11-05-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Bon,2
+752,11-05-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+752,11-05-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",7,0
+752,11-05-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",6,0
+752,11-05-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",6,0
+752,11-05-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",9,0
+752,11-05-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",10,0
+752,11-05-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+752,11-05-2022,VG,1,10,"Quel âge as-tu ?",12,0
+752,11-05-2022,VG,1,11,"Dans quel pays habites-tu ?",France,0
+752,11-05-2022,VG,1,12,Sexe,Garçon,1
+753,11-05-2022,QFP,1,1,day_dob,07,0
+753,11-05-2022,QFP,1,1,month_dob,11,0
+753,11-05-2022,QFP,1,1,year_dob,2011,0
+753,11-05-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+753,11-05-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",7e,0
+753,11-05-2022,QFP,1,4,"independent dragging",Oui,0
+753,11-05-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",france,0
+753,11-05-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+753,11-05-2022,SDQ,1,1,"ladder community",5,5
+753,11-05-2022,SDQ,2,1,"ladder people in France",5,5
+753,11-05-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+753,11-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+753,11-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+753,11-05-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps plein",0
+753,11-05-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......","Journalisme, urbanisme",0
+753,11-05-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)","Chef d'entreprise",0
+753,11-05-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","Ne souhaite pas répondre",10
+753,11-05-2022,SDQ,4,1,"Nombre de personnes",5,0
+753,11-05-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",3,0
+753,11-05-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+753,11-05-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+753,11-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+753,11-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+753,11-05-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Ne souhaite pas répondre",10
+753,11-05-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","1 à 2 mois",1
+753,11-05-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","Ne souhaite pas répondre",10
+753,11-05-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Ne souhaite pas répondre",10
+753,11-05-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?",Jamais,4
+753,11-05-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?","Très bon",0
+753,11-05-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+753,11-05-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",8,0
+753,11-05-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",10,0
+753,11-05-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",6,0
+753,11-05-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",10,0
+753,11-05-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",10,0
+753,11-05-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Oui,0
+753,11-05-2022,VG,1,10,"Quel âge as-tu ?",10,0
+753,11-05-2022,VG,1,11,"Dans quel pays habites-tu ?",france,0
+753,11-05-2022,VG,1,12,Sexe,Garçon,1
+754,11-05-2022,QFP,1,1,day_dob,07,0
+754,11-05-2022,QFP,1,1,month_dob,11,0
+754,11-05-2022,QFP,1,1,year_dob,2011,0
+754,11-05-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+754,11-05-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",7e,0
+754,11-05-2022,QFP,1,4,"independent dragging",Oui,0
+754,11-05-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",France,0
+754,11-05-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Fille,1
+754,11-05-2022,SDQ,1,1,"ladder community",5,5
+754,11-05-2022,SDQ,2,1,"ladder people in France",5,5
+754,11-05-2022,SDQ,2,2,"Veuillez sélectionner votre plus haut niveau d’études ?",Supérieure,2
+754,11-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu","Universités / Grandes écoles / Ecoles supérieures du secondaire",4
+754,11-05-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+754,11-05-2022,SDQ,3,2,"Parmi ces options, laquelle correspond le mieux à votre situation actuelle ?","Travail à temps plein",0
+754,11-05-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",Pharmacie,0
+754,11-05-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+754,11-05-2022,SDQ,3,5,"Quel est votre niveau de rémunération brute annuelle ?","Ne souhaite pas répondre",10
+754,11-05-2022,SDQ,4,1,"Nombre de personnes",5,0
+754,11-05-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",3,0
+754,11-05-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",2,0
+754,11-05-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",2,0
+754,11-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez ",Propriétaire,0
+754,11-05-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+754,11-05-2022,SDQ,4,6,"Veuillez sélectionner l’option qui correspond à l’ensemble des revenus de .......","Ne souhaite pas répondre",10
+754,11-05-2022,SDQ,4,7,"Si vous vous retrouviez sans vos revenus actuels, combien de temps pourriez-vous maintenir votre n.......","1 à 2 mois",1
+754,11-05-2022,SDQ,5,1,"En supposant que vous ayez rapidement besoin de liquidités, quel montant d’écono.......","Ne souhaite pas répondre",10
+754,11-05-2022,SDQ,5,2,"Si vous déduisez les montants de vos éventuels emprunts en cours, de quel montant dispos.......","Ne souhaite pas répondre",10
+754,11-05-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?","Plusieurs fois par mois",2
+754,11-05-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?",Bon,2
+754,11-05-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+754,11-05-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",8,0
+754,11-05-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",8,0
+754,11-05-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",10,0
+754,11-05-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",3,0
+754,11-05-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",4,0
+754,11-05-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Non,1
+754,11-05-2022,VG,1,10,"Quel âge as-tu ?",10,0
+754,11-05-2022,VG,1,11,"Dans quel pays habites-tu ?",France,0
+754,11-05-2022,VG,1,12,Sexe,Fille,2
+1442,12-07-2022,QFP,1,1,day_dob,1,0
+1442,12-07-2022,QFP,1,1,month_dob,1,0
+1442,12-07-2022,QFP,1,1,year_dob,2013,0
+1442,12-07-2022,QFP,1,2,"En quel niveau d’études est votre enfant ?",Primaire,0
+1442,12-07-2022,QFP,1,3,"Dans quelle classe est votre enfant ?",test,0
+1442,12-07-2022,QFP,1,4,"independent dragging",Oui,0
+1442,12-07-2022,QFP,1,5,"Dans quel pays votre enfant habite-t-il?",test,0
+1442,12-07-2022,QFP,1,6,"Quel est le sexe de votre enfant ?",Garçon,0
+1442,12-07-2022,SDQ,1,1,"ladder community",,0
+1442,12-07-2022,SDQ,2,1,"ladder people in France",,0
+1442,12-07-2022,SDQ,3,1,"Veuillez indiquer votre plus haut diplôme obtenu_OTHER",,0
+1442,12-07-2022,SDQ,3,3,"Dans quel secteur d’activités travaillez-vous ou avez-vous travaillé le plus r�%.......",,0
+1442,12-07-2022,SDQ,3,4,"Quelle fonction occupez-vous actuellement ? (Intitulé de poste)",,0
+1442,12-07-2022,SDQ,4,1,"Nombre de personnes",,0
+1442,12-07-2022,SDQ,4,2,"Parmi ces personnes, combien y-at-il d’enfants ?",,0
+1442,12-07-2022,SDQ,4,3,"Parmi ces personnes, combien y-a-t-il d’adultes ?",,0
+1442,12-07-2022,SDQ,4,4,"Parmi ces adultes, combien de personnes apportent des revenus ?",,0
+1442,12-07-2022,SDQ,4,5,"Veuillez sélectionner l’option qui correspond au logement que vous occupez _OTHER",,0
+1442,12-07-2022,VG,1,1,"A quelle fréquence joues-tu à des jeux vidéo ?",Jamais,4
+1442,12-07-2022,VG,1,2,"Comment évalues-tu ton niveau en jeux vidéo ?","Plutôt bon",1
+1442,12-07-2022,VG,1,3,"À quel genre de jeux vidéo joues-tu le plus souvent ? Tu peux cocher plusieurs cases si .......",Array,0
+1442,12-07-2022,VG,1,4,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+1442,12-07-2022,VG,1,5,"Sur une échelle de 1 (faibles) à 10 (excellentes) – comment évalues-t.......",5,0
+1442,12-07-2022,VG,1,6,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+1442,12-07-2022,VG,1,7,"Sur une échelle de 1 (pas du tout) à 10 (tout à fait) – est-ce que tu.......",5,0
+1442,12-07-2022,VG,1,8,"Sur une échelle de 1 (pas du tout) à 10 (beaucoup) – est-ce que tu fais du.......",5,0
+1442,12-07-2022,VG,1,9,"Portes-tu des lunettes ou des lentilles de contact ?",Oui,0
+1442,12-07-2022,VG,1,10,"Quel âge as-tu ?",test,0
+1442,12-07-2022,VG,1,11,"Dans quel pays habites-tu ?",test,0
+1442,12-07-2022,VG,1,12,Sexe,Garçon,1
