@@ -1,0 +1,589 @@
+---
+title: "Marginal Effects"
+output:
+  html_document:
+    df_print: paged
+  word_document: default
+---
+
+In this analysis we run multiple linear models to explore the relation between the dependent variables and group. To explore the effect of age we also run the same model using age as covariate and the we compare the two models using [test_likelihoodratio](https://easystats.github.io/performance/reference/test_likelihoodratio.html).
+
+After finding the best models (all the model are better including age) we look at the interaction between group and age for all the variables. We use the package [modelbased](https://easystats.github.io/modelbased/reference/estimate_slopes.html) to extract the marginal effects. Modelbased's estimate_slope is a wrapper around Emmeans' [emtrends](https://rdrr.io/cran/emmeans/man/emtrends.html)
+
+# Preparation
+
+Read and prepare the data to be analyzed
+
+```{r, message=FALSE}
+### Importing libraries
+library(easystats)  # to compute estimate slopes and check model assumptions
+library(car)        # to extract anova table from linear models
+library(haven)      # to read spss database files
+library(tidyverse)    # plotting library
+library(patchwork)
+library(ggrepel)
+
+# Custom palettes
+palette1 <- c("#559ad1", "#ffb621",  "#CC79A7","#F46036")
+palette2 = c('black','azure4')
+```
+
+After importing the libraries we read the data
+
+```{r, message=FALSE}
+### Read data
+input = 'C:\\Users\\tomma\\OneDrive - Birkbeck, University of London\\VirtualTools_Rewards_2022\\SPSS\\database\\'
+output = 'C:\\Users\\tomma\\OneDrive - Birkbeck, University of London\\VirtualTools_Rewards_2022\\Analysis\\R_analysis\\Plots\\'
+
+Time = read_sav(paste(input, 'DatabaseSRATTTIME.sav', sep=''))
+Switch = read_sav(paste(input, 'databasetoolswitching.sav', sep=''))
+Distance = read_sav(paste(input, 'databasedistance.sav', sep=''))
+Ntools = read_sav(paste(input, 'databasenbtool.sav', sep=''))
+
+## making sure group is a factor and not a integer
+
+Time$group      = factor(Time$group)
+Switch$group    = factor(Switch$group)
+Distance$group  = factor(Distance$group)
+Ntools$group    = factor(Ntools$group)
+```
+
+We now can run the analysis. We will start by looking at the Time domain
+
+# Analysis
+
+## Time
+
+### Success Rate
+
+```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
+##### Model the data using simple linear model
+Time.mod1.sr = lm(sr~group, data =  Time )
+Time.mod2.sr = lm(sr~age*group, data =  Time )
+
+# Compare the two models with or without age
+# this show the model with age is better
+test_likelihoodratio(Time.mod1.sr,Time.mod2.sr)
+
+# Extracting parameters linear model
+parameters(Time.mod2.sr)
+
+# In case we prefer we can also extract an anova table
+Anova(Time.mod2.sr, type='III')
+
+# Checks model assumptions
+ck1 = plot(check_normality(Time.mod2.sr),type = "qq")
+ck2 = plot(check_outliers(Time.mod2.sr))
+ck1/ck2
+
+### estimate slopes
+slope_Time.mod.sr = estimate_slopes(Time.mod2.sr, at = 'group')
+slope_Time.mod.sr
+```
+
+**Plotting the results**\
+Here we plot the result of our analysis.\
+On top the plot of our model, raw data (dots) and the estimate of the model (line).\
+On the bottom the plot of the estimated marginal means.
+
+```{r, fig.height=8.3, fig.width=11.7, fig.align='center', dpi = 300}
+
+# make preparation for the slope data-frame
+slopePlot = slope_Time.mod.sr %>%
+  mutate(P = case_when(
+    p >= 0.05 ~ '', 
+    p < 0.05 & p >= 0.01 ~ '*',
+    p < 0.01 & p >= 0.001 ~ '**',
+    p < 0.001 ~ '***'),
+    R = paste( c("\U03B2:","\U03B2:","\U03B2:"), as.character(round(Coefficient,3))))
+
+# Model plot
+T1.1 = Time %>%
+  bind_cols( as.data.frame(get_predicted(Time.mod2.sr, ci=0.95))) %>%
+  ggplot( aes(x=age, y=Predicted, color = group))+
+    geom_point(aes(y=sr), size=7)+
+    geom_line(linewidth = 4.5)+
+    geom_text(inherit.aes = F, data =slopePlot, aes(x = 10, y=115, label = R), size = 12)+
+    geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=105, label = P), size = 18)+
+    facet_wrap(~ group, labeller = labeller(group = 
+      c('1' = 'PRG',
+        '2' = 'NRG',
+        '3' = 'Control')))+
+    labs(x = 'Years', y = 'Success rate (%)')+
+    ylim(NA, 120)+
+    theme_classic(base_size = 40)+
+    theme(axis.line = element_blank(),legend.position = "none")+
+    scale_colour_manual(values=palette1)
+ggsave(paste(output,'SuccesRate.jpg', sep = ''), T1.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+
+# Marginal Effect plot
+T1.2 = slopePlot %>%
+  mutate(Significance = ifelse(p < 0.05, "True", "False")) %>%
+  ggplot( aes(x = group, y = Coefficient, color = Significance))+
+  geom_hline(yintercept = 0, linewidth=1.3, linetype = "dashed")+
+  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size=2.4, linewidth=1.5)+
+  theme_classic(base_size = 40)+
+  theme(axis.line = element_blank(),legend.position = "bottom")+
+  scale_x_discrete(name=NULL,label = c('PRG','NRG','Control'))+
+  coord_cartesian(xlim = c(1.12, 2.92))+
+  scale_colour_manual(values=palette2)+
+  labs(y = 'Effect of Age')+
+  scale_y_continuous(n.breaks=4)
+ggsave(paste(output,'slope_Time_sr_plot.jpg', sep = ''), T1.2, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+
+
+combT1 = T1.1 / T1.2 +
+  plot_layout(heights = c(2, 1.2))
+
+ggsave(paste(output,'SuccesRateCombo.jpg', sep = ''),combT1 , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+
+
+combT1
+```
+
+### Time per attempt
+
+No significant result for time per attempt
+
+```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
+##### Model the data using simple linear model
+Time.mod1.timeattempt = lm(timeperattempt~group, data =  Time )
+Time.mod2.timeattempt = lm(timeperattempt~age*group, data =  Time )
+
+# Compare the two models with or without age
+# both models here are not significative I'll use the 
+# one with age but doesn't make a lot of sense
+test_likelihoodratio(Time.mod2.timeattempt,Time.mod1.timeattempt)
+
+# Extracting parameters linear model
+parameters(Time.mod1.timeattempt)
+
+# In case we prefer we can also extract an anova table
+Anova(Time.mod1.timeattempt, type='III')
+
+# Checks model assumptions
+ck1 = plot(check_normality(Time.mod1.timeattempt),type = "qq")
+ck2 = plot(check_outliers(Time.mod1.timeattempt))
+ck1/ck2
+```
+**Plotting the results**\
+Here we plot the result of our analysis.\
+On top the plot of our model, raw data (dots) and the estimate of the model (line).\
+On the bottom the plot of the estimated marginal means.
+
+```{r, fig.height=8.3, fig.width=11.7, fig.align='center', dpi = 300}
+# Model plot
+
+Mean.T2 = as.data.frame(estimate_means(Time.mod1.timeattempt))
+Mean.T2$M = paste( c('M:','M:','M:'), as.character(round(Mean.T2$Mean,1)))
+
+T2 = ggplot(Time, aes(x=group, y = timeperattempt, color = group ))+
+  geom_point(position = position_jitterdodge(),size=7, alpha=0.35)+
+  geom_pointrange(inherit.aes = F, data = Mean.T2 , aes(x= group, y = Mean, ymin = Mean-SE, ymax = Mean+SE, color = group), size=3,linewidth=2.5)+
+  geom_text(inherit.aes = F, data = Mean.T2, aes(x =c(1.3,2.3,3.3), y= Mean, label= M),size = 10)+
+  scale_colour_manual(values=palette1)+
+  scale_x_discrete(label = c('PRG','NRG','Control'))+
+  scale_y_continuous(labels=function(x)x/1000)+
+  labs(y = "Attempt time (sec)")+
+  coord_cartesian(xlim = c(1.13, 2.9))+
+  theme_classic(base_size = 40)+
+  theme(axis.line = element_blank(),legend.position = "none",
+        axis.title.x = element_blank())
+
+
+ggsave(paste(output,'TimePerAttempt.jpg', sep = ''), T2 , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+T2
+```
+### Attempt per trial
+
+```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
+##### Model the data using simple linear model
+Time.mod1.attempttr = lm(attemptpertrial~group, data =  Time )
+Time.mod2.attempttr = lm(attemptpertrial~age*group, data =  Time )
+
+# Compare the two models with or without age
+# this show the model with age is better
+test_likelihoodratio(Time.mod1.attempttr,Time.mod2.attempttr)
+
+# Extracting parameters linear model
+parameters(Time.mod2.attempttr)
+
+# In case we prefer we can also extract an anova table
+Anova(Time.mod2.attempttr, type='III')
+
+# Checks model assumptions
+ck1 = plot(check_normality(Time.mod2.attempttr),type = "qq")
+ck2 = plot(check_outliers(Time.mod2.attempttr))
+ck1/ck2
+
+### estimate slopes
+slope_Time.mod.attempttr = estimate_slopes(Time.mod2.attempttr, at = 'group')
+slope_Time.mod.attempttr
+```
+
+**Plotting the results**\
+Here we plot the result of our analysis.\
+On top the plot of our model, raw data (dots) and the estimate of the model (line).\
+On the bottom the plot of the estimated marginal means.
+
+```{r, fig.height=8.3, fig.width=11.7, fig.align='center', dpi = 300}
+
+# make preparation for the slope data-frame
+slopePlot = slope_Time.mod.attempttr %>%
+  mutate(P = case_when(
+    p >= 0.05 ~ '', 
+    p < 0.05 & p >= 0.01 ~ '*',
+    p < 0.01 & p >= 0.001 ~ '**',
+    p < 0.001 ~ '***'),
+    R = paste( c("\U03B2:","\U03B2:","\U03B2:"), as.character(round(Coefficient,3))))
+
+# Model plot
+T3.1 = Time %>%
+  bind_cols( as.data.frame(get_predicted(Time.mod2.attempttr, ci=0.95))) %>%
+  ggplot( aes(x=age, y=Predicted, color = group))+
+    geom_point(aes(y=attemptpertrial), size=7)+
+    geom_line(linewidth = 4.5)+
+    geom_text(inherit.aes = F, data =slopePlot, aes(x = 10, y=6.8, label = R), size = 12)+
+    geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=6.2, label = P), size = 18)+
+    facet_wrap(~ group, labeller = labeller(group = 
+      c('1' = 'PRG',
+        '2' = 'NRG',
+        '3' = 'Control')))+
+    labs(x = 'Years', y = '# of attempts')+
+    ylim(NA, 7.1)+
+    theme_classic(base_size = 40)+
+    theme(axis.line = element_blank(),legend.position = "none")+
+    scale_colour_manual(values=palette1)
+ggsave(paste(output,'AttemptsPerTrial.jpg', sep = ''), T3.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+
+# Marginal Effect plot
+T3.2 = slopePlot %>%
+  mutate(Significance = ifelse(p < 0.05, "True", "False")) %>%
+  ggplot( aes(x = group, y = Coefficient, color = Significance))+
+  geom_hline(yintercept = 0, linewidth=1.3, linetype = "dashed")+
+  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size=2.4, linewidth=1.5)+
+  theme_classic(base_size = 40)+
+  theme(axis.line = element_blank(),legend.position = "bottom")+
+  scale_x_discrete(name=NULL,label = c('PRG','NRG','Control'))+
+  coord_cartesian(xlim = c(1.12, 2.92))+
+  scale_colour_manual(values=palette2)+
+  labs(y = 'Effect of Age')+
+  scale_y_continuous(n.breaks=4)
+ggsave(paste(output,'slope_Time_attempttr_plot.jpg', sep = ''), T3.2, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+ 
+combT3 = T3.1 / T3.2 +
+  plot_layout(heights = c(2, 1.2))
+
+ggsave(paste(output,'AttemptsPerTrialCombo.jpg', sep = ''),combT3 , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+combT3
+```
+
+## Tool switching
+
+```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
+##### Model the data using simple linear model
+Switch.mod1 = lm(toolswitching~group, data =  Switch )
+Switch.mod2 = lm(toolswitching~age*group, data =  Switch )
+
+# Compare the two models with or without age
+# this show the model with age is better
+test_likelihoodratio(Switch.mod1,Switch.mod2)
+
+# Extracting parameters linear model
+parameters(Switch.mod2)
+
+# In case we prefer we can also extract an anova table
+Anova(Switch.mod2, type='III')
+
+# Contrast analysis for the group level
+estimate_contrasts(Switch.mod2)
+
+# Checks model assumptions
+ck1 = plot(check_normality(Switch.mod2),type = "qq")
+ck2 = plot(check_outliers(Switch.mod2))
+ck1/ck2
+
+### estimate slopes
+slope_Switch.mod = estimate_slopes(Switch.mod2, at = 'group')
+slope_Switch.mod
+```
+
+**Plotting the results**\
+Here we plot the result of our analysis.\
+On top the plot of our model, raw data (dots) and the estimate of the model (line).\
+On the bottom the plot of the estimated marginal means.
+
+```{r, fig.height=8.3, fig.width=11.7, fig.align='center', dpi = 300}
+
+# make preparation for the slope data-frame
+slopePlot = slope_Switch.mod %>%
+  mutate(P = case_when(
+    p >= 0.05 ~ '', 
+    p < 0.05 & p >= 0.01 ~ '*',
+    p < 0.01 & p >= 0.001 ~ '**',
+    p < 0.001 ~ '***'),
+    R = paste( c("\U03B2:","\U03B2:","\U03B2:"), as.character(round(Coefficient,3))))
+
+
+# Model Plot
+Ts.1 = Switch %>%
+  bind_cols( as.data.frame(get_predicted(Switch.mod2, ci=0.95))) %>%
+  ggplot( aes(x=age, y=Predicted, color = group))+
+    geom_point(aes(y=toolswitching), size=7)+
+    geom_line(linewidth = 4.5)+
+    geom_text(inherit.aes = F, data =slopePlot, aes(x = 10, y=118, label = R), size = 12)+
+    geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=96, label = P), size = 18)+
+    facet_wrap(~ group, labeller = labeller(group = 
+      c('1' = 'PRG',
+        '2' = 'NRG',
+        '3' = 'Control')))+
+    labs(x = 'Years', y = 'Tool switching (%)')+
+    ylim(NA,123)+
+    theme_classic(base_size = 40)+
+    theme(axis.line = element_blank(),legend.position = "none")+
+    scale_colour_manual(values=palette1)
+ggsave(paste(output,'ToolSwitching.jpg', sep = ''), Ts.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+
+# Marginal Effect plot
+Ts.2 = slopePlot %>%
+  mutate(Significance = ifelse(p < 0.05, "True", "False")) %>%
+  ggplot( aes(x = group, y = Coefficient, color = Significance))+
+  geom_hline(yintercept = 0, linewidth=1.3, linetype = "dashed")+
+  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size=2.4, linewidth=1.5)+
+  theme_classic(base_size = 40)+
+  theme(axis.line = element_blank(),legend.position = "bottom")+
+  scale_x_discrete(name=NULL,label = c('PRG','NRG','Control'))+
+  coord_cartesian(xlim = c(1.12, 2.92))+
+  scale_colour_manual(values=palette2)+
+  labs(y = 'Effect of Age')+
+  scale_y_continuous(n.breaks=4)
+ggsave(paste(output,'slope_Switch_plot.jpg', sep = ''), Ts.2, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+ 
+combTs = Ts.1 / Ts.2 +
+  plot_layout(heights = c(2, 1.2))
+
+ggsave(paste(output,'ToolSwitchingCombo.jpg', sep = ''),combTs , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+combTs
+```
+
+## Number of tools
+
+```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
+##### Model the data using simple linear model
+Ntools.mod1 = lm(nbtool~group, data =  Ntools )
+Ntools.mod2 = lm(nbtool~age*group, data =  Ntools )
+
+#Compare the two models with or without age
+# this show the model with age is better
+test_likelihoodratio(Ntools.mod1,Ntools.mod2)
+
+# Extracting parameters linear model
+parameters(Ntools.mod2)
+
+# In case we prefer we can also extract an anova table
+Anova(Ntools.mod2, type='III')
+
+# Contrast analysis for the group level
+estimate_contrasts(Ntools.mod2)
+
+# Checks model assumptions
+ck1 = plot(check_normality(Ntools.mod2),type = "qq")
+ck2 = plot(check_outliers(Ntools.mod2))
+ck1/ck2
+
+### estimate slopes
+slope_Ntools.mod= estimate_slopes(Ntools.mod2, at = 'group')
+slope_Ntools.mod
+```
+
+**Plotting the results**\
+Here we plot the result of our analysis.\
+On top the plot of our model, raw data (dots) and the estimate of the model (line).\
+On the bottom the plot of the estimated marginal means.
+
+```{r, fig.height=8.3, fig.width=11.7, fig.align='center', dpi = 300}
+
+# make preparation for the slope data-frame
+slopePlot = slope_Ntools.mod %>%
+  mutate(P = case_when(
+    p >= 0.05 ~ '', 
+    p < 0.05 & p >= 0.01 ~ '*',
+    p < 0.01 & p >= 0.001 ~ '**',
+    p < 0.001 ~ '***'),
+    R = paste( c("\U03B2:","\U03B2:","\U03B2:"), as.character(round(Coefficient,3))))
+
+# Model Plot
+N.1 = Ntools %>%
+  bind_cols( as.data.frame(get_predicted(Ntools.mod2, ci=0.95))) %>%
+  ggplot( aes(x=age, y=Predicted, color = group))+
+    geom_point(aes(y=nbtool), size=7)+
+    geom_line(linewidth = 4.5)+
+    geom_text(inherit.aes = F, data =slopePlot, aes(x = 10, y=3.6, label = R), size = 12)+
+    geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=3.05, label = P), size = 18)+
+    facet_wrap(~ group, labeller = labeller(group = 
+      c('1' = 'PRG',
+        '2' = 'NRG',
+        '3' = 'Control')))+
+    labs(x = 'Years', y = '# of tools')+
+    ylim(NA, 3.8)+
+    theme_classic(base_size = 40)+
+    theme(axis.line = element_blank(),legend.position = "none")+
+    scale_colour_manual(values=palette1)
+ggsave(paste(output,'NumberOfTools.jpg', sep = ''), N.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+
+# Marginal Effect plot
+N.2 = slopePlot %>%
+  mutate(Significance = ifelse(p < 0.05, "True", "False")) %>%
+  ggplot( aes(x = group, y = Coefficient, color = Significance))+
+  geom_hline(yintercept = 0, linewidth=1.3, linetype = "dashed")+
+  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size=2.4, linewidth=1.5)+
+  theme_classic(base_size = 40)+
+  theme(axis.line = element_blank(),legend.position = "bottom")+
+  scale_x_discrete(name=NULL,label = c('PRG','NRG','Control'))+
+  coord_cartesian(xlim = c(1.12, 2.92))+
+  scale_colour_manual(values=palette2)+
+  labs(y = 'Effect of Age')+
+  scale_y_continuous(n.breaks=4)
+ggsave(paste(output,'slope_Ntools_plot.jpg', sep = ''), N.2, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+
+combN = N.1 / N.2 +
+  plot_layout(heights = c(2, 1.2))
+
+ggsave(paste(output,'NumberOfToolsCombo.jpg', sep = ''),combN , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+combN
+```
+
+## Distance
+
+```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
+##### Model the data using simple linear model
+Distance.mod1 = lm(distance~group, data =  Distance )
+Distance.mod2 = lm(distance~age*group, data =  Distance )
+
+#Compare the two models with or without age
+# this show the model with age is better
+test_likelihoodratio(Distance.mod1,Distance.mod2)
+
+# Extracting parameters linear model
+parameters(Distance.mod2)
+
+# In case we prefer we can also extract an anova table
+Anova(Distance.mod2, type='III')
+
+# Contrast analysis for the group level
+estimate_contrasts(Distance.mod2)
+
+# Checks model assumptions
+ck1 = plot(check_normality(Distance.mod2),type = "qq")
+ck2 = plot(check_outliers(Distance.mod2))
+ck1/ck2
+
+### estimate slopes
+slope_Distance.mod= estimate_slopes(Distance.mod2, at = 'group')
+slope_Distance.mod
+```
+
+**Plotting the results**\
+Here we plot the result of our analysis.\
+On top the plot of our model, raw data (dots) and the estimate of the model (line).\
+On the bottom the plot of the estimated marginal means.
+
+```{r, fig.height=8.3, fig.width=11.7, fig.align='center', dpi = 300}
+
+# make preparation for the slope data-frame
+slopePlot = slope_Distance.mod %>%
+  mutate(P = case_when(
+    p >= 0.05 ~ '', 
+    p < 0.05 & p >= 0.01 ~ '*',
+    p < 0.01 & p >= 0.001 ~ '**',
+    p < 0.001 ~ '***'),
+    R = paste( c("\U03B2:","\U03B2:","\U03B2:"), as.character(round(Coefficient,3))))
+
+# Model plot
+D.1 = Distance %>%
+  bind_cols( as.data.frame(get_predicted(Distance.mod2, ci=0.95))) %>%
+  ggplot( aes(x=age, y=Predicted, color = group))+
+    geom_point(aes(y=distance), size=7)+
+    geom_line(linewidth = 4.5)+
+      geom_text(inherit.aes = F, data =slopePlot, aes(x = 10, y=320, label = R), size = 12)+
+    geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=265, label = P), size = 18)+
+    facet_wrap(~ group, labeller = labeller(group = 
+      c('1' = 'PRG',
+        '2' = 'NRG',
+        '3' = 'Control')))+
+    ylim(NA, 335)+
+    labs(x = 'Years', y = 'Distance (pixels)')+
+    theme_classic(base_size = 40)+
+    theme(axis.line = element_blank(),legend.position = "none")+
+    scale_colour_manual(values=palette1)
+ggsave(paste(output,'Distance.jpg', sep = ''), D.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+
+# Marginal Effect plot
+D.2 = slopePlot %>%
+  mutate(Significance = ifelse(p < 0.05, "True", "False")) %>%
+  ggplot( aes(x = group, y = Coefficient, color = Significance))+
+  geom_hline(yintercept = 0, linewidth=1.3, linetype = "dashed")+
+  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size=2.4, linewidth=1.5)+
+  theme_classic(base_size = 40)+
+  theme(axis.line = element_blank(),legend.position = "bottom")+
+  scale_x_discrete(name=NULL,label = c('PRG','NRG','Control'))+
+  coord_cartesian(xlim = c(1.12, 2.92))+
+  scale_colour_manual(values=palette2)+
+  labs(y = 'Effect of Age')+
+  scale_y_continuous(n.breaks=4)
+ggsave(paste(output,'slope_Distance_plot.jpg', sep = ''), D.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+ 
+combD = D.1 / D.2 +
+  plot_layout(heights = c(2, 1.2))
+
+ggsave(paste(output,'DistanceCombo.jpg', sep = ''),combD , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
+combD
+```
+
+## FinalPlot
+
+Putting together all the plots
+
+```{r, fig.height=23, fig.width=11.7, fig.align='center', dpi = 300}
+# Define the plots
+T1.1 = T1.1 + theme(axis.line = element_blank(), strip.background = element_blank(), strip.text.x = element_blank())
+T1.2 = T1.2 + theme(axis.line = element_blank(),axis.text.x=element_blank(),legend.position = "none",axis.ticks.x=element_blank())
+T3.1 = T3.1 + theme(axis.line = element_blank(), strip.background = element_blank(), strip.text.x = element_blank())
+T3.2 = T3.2 + theme(axis.line = element_blank(), legend.position = "bottom")
+
+# Arrange the plots
+comb1 = T1.1 / T1.2 /plot_spacer()/ T3.1 / T3.2 +
+  plot_layout(heights = c(2, 1, 0.35,2, 1))+
+  plot_annotation(tag_levels = list(c('A','','B',''))) &
+  theme(plot.tag = element_text(size = 60), plot.tag.position  = c(-0.06, 1),
+        plot.margin = margin(1, 1, 1, 2, "cm"))
+
+comb1
+
+ggsave(paste(output,'FinalPlot_Time.jpg', sep = ''),comb1 , width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+ggsave(paste(output,'FinalPlot_Time.svg', sep = ''),comb1 , width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+ggsave(paste(output,'FinalPlot_Time.tiff', sep = ''),comb1 , width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+```
+
+```{r, fig.height=23, fig.width=11.7, fig.align='center', dpi = 300}
+Ts.1_p = Ts.1 + theme(axis.line = element_blank(), strip.background = element_blank(), strip.text.x = element_blank())
+Ts.2_p = Ts.2 + theme(axis.line = element_blank(),axis.text.x=element_blank(),legend.position = "none",axis.ticks.x=element_blank())
+N.1_p = N.1 + theme(axis.line = element_blank(), strip.background = element_blank(), strip.text.x = element_blank())
+N.2_p = N.2 + theme(axis.line = element_blank(),axis.text.x=element_blank(),legend.position = "none",axis.ticks.x=element_blank())
+D.1_p = D.1 + theme(axis.line = element_blank(), strip.background = element_blank(), strip.text.x = element_blank())
+D.2_p = D.2 + theme(axis.line = element_blank(), legend.position = "bottom")
+
+# Arrange the plots
+comb2 = Ts.1_p / Ts.2_p / plot_spacer() / N.1_p / N.2_p / plot_spacer()/D.1_p/ D.2_p+
+  plot_layout(heights = c(2, 1, .4, 2, 1, .4,2, 1))+
+  plot_annotation(tag_levels = list(c('A','','B','', 'C',''))) &
+  theme(plot.tag = element_text(size = 60), plot.tag.position  = c(-0.06, 1),
+        plot.margin = margin(1, 1, 1, 2, "cm"))
+
+comb2
+
+ggsave(paste(output,'FinalPlot_Int.jpg', sep = ''), comb2, width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+ggsave(paste(output,'FinalPlot_Int.svg', sep = ''), comb2, width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+ggsave(paste(output,'FinalPlot_Int.tiff', sep = ''), comb2, width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+
+```
