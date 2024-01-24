@@ -1,6 +1,5 @@
 # R code
 
-## General intro
 This R code was used to analyze the results of an online experiment conducted at Birkbeck.
 
 This experiment consisted of 2 versions, one in English and one in French, accessible through 2 separate links.
@@ -13,4 +12,4 @@ The main variables were performance measures (success rate, number of attempts a
 ## Files
 - The Rewardanalysis_Anova.Rmd file explore the effect of the reward group on the performance measures using anovas.
 
-- The Rewardanalysis.Rmd follows up the anova analysis by runnign linear model exploring the contribution of reward group and age on the different performance measures.
+- The Rewardanalysis_lm.Rmd follows up the anova analysis by runnign linear model exploring the contribution of reward group and age on the different performance measures.

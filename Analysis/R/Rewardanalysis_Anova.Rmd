@@ -6,8 +6,7 @@ output:
   word_document: default
 ---
 
-In this analysis we run multiple anovas variables and group.
-After running the anova we perform a Tukey HSD test to check for significant differences between groups.
+In this analysis we run multiple anovas variables and group. After running the anova we perform a Tukey HSD test to check for significant differences between groups.
 
 # Preparation
 
