@@ -3,3 +3,5 @@ This online experiment included two versions, one in French (FR) and one in Engl
 There are separate csv files for the two versions of the experiment.
 
 The experiment started with a questionnaire and then the completion of the games. There are different csv files for the questionnaires and the games.
+
+The Database folder contains .sav files. These are the pre-processed and reshaped data used in the final analysis.
