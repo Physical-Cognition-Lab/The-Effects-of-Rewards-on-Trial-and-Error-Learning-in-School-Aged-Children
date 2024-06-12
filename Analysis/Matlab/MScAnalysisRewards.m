@@ -3,7 +3,7 @@
 
 clear all;
 clc;
-cd('/Users/nicolas/Documents/helene/londres/Birkbeck/journal drafts/Rewards/csv data/Data_performance');
+cd(<path to data>);
  
 % add the group column on each csv file (g1- Positive Reward group, g2-
 % Negative Reward group, g3 - Control group). 
@@ -15,20 +15,20 @@ cd('/Users/nicolas/Documents/helene/londres/Birkbeck/journal drafts/Rewards/csv 
              numOfColumn = size(t, 2);
 t(:,end+1) = {1}; %  new column with group
 t.Properties.VariableNames{numOfColumn+1} = 'Group';
-writetable(t, '/Users/nicolas/Documents/helene/londres/Birkbeck/journal drafts/Rewards/csv data/Data_performance/with grouping/groupFrench1.csv');
+writetable(t, <path to data>);
          case 2
                t = readtable('gametools_score_fr_game_g2.csv');
                numOfColumn = size(t, 2);
 t(:,end+1) = {2}; %  new column with group
 t.Properties.VariableNames{numOfColumn+1} = 'Group';
-writetable(t, '/Users/nicolas/Documents/helene/londres/Birkbeck/journal drafts/Rewards/csv data/Data_performance/with grouping/groupFrench2.csv')
+writetable(t, <path to data>)
 
          case 3
               t = readtable('gametools_score_fr_game_g3.csv');
               numOfColumn = size(t, 2);
 t(:,end+1) = {3}; %  new column with group
 t.Properties.VariableNames{numOfColumn+1} = 'Group';
-writetable(t, '/Users/nicolas/Documents/helene/londres/Birkbeck/journal drafts/Rewards/csv data/Data_performance/with grouping/groupFrench3.csv')
+writetable(t, <path to data>)
          
 
 case 4
@@ -36,26 +36,26 @@ case 4
          numOfColumn = size(t, 2);
 t(:,end+1) = {1}; %  new column with group
 t.Properties.VariableNames{numOfColumn+1} = 'Group';
-writetable(t, '/Users/nicolas/Documents/helene/londres/Birkbeck/journal drafts/Rewards/csv data/Data_performance/with grouping/groupEnglish1.csv')
+writetable(t, <path to data>)
 
 case 5
          t = readtable('gametools_score_game_g2.csv');
          numOfColumn = size(t, 2);
 t(:,end+1) = {2}; %  new column with group
 t.Properties.VariableNames{numOfColumn+1} = 'Group';
-writetable(t, '/Users/nicolas/Documents/helene/londres/Birkbeck/journal drafts/Rewards/csv data/Data_performance/with grouping/groupEnglish2.csv')
+writetable(t, <path to data>)
 
          case 6
          t = readtable('gametools_score_game_g3.csv');
          numOfColumn = size(t, 2);
 t(:,end+1) = {3}; %  new column with group
 t.Properties.VariableNames{numOfColumn+1} = 'Group';
-writetable(t, '/Users/nicolas/Documents/helene/londres/Birkbeck/journal drafts/Rewards/csv data/Data_performance/with grouping/groupEnglish3.csv')
+writetable(t, <path to data>)
      end
  end
  
 % merge all csv group files into one file
-cd('/Users/nicolas/Documents/helene/londres/Birkbeck/journal drafts/Rewards/csv data/Data_performance/with grouping');
+cd(<path to data>);
 database_games = table();
   fileNames = dir('*.csv');
  for ii = 1:6
@@ -64,7 +64,7 @@ database_games = table();
  end
  
  % access the csv files with the participants' socio demographic data from the 2 links and merge FR and EN participants into one csv file
- cd('/Users/nicolas/Documents/helene/londres/Birkbeck/journal drafts/Rewards/csv data/Data_Demographics');
+ cd(<path to data>);
  
  database_participants = table();
  fileNames = dir('*.csv');

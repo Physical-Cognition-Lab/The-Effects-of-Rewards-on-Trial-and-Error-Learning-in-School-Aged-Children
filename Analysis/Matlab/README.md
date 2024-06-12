@@ -1,6 +1,6 @@
 # Matlab code
 
-This Matlab code allows to analyze the results of an online experiment conducted at Birkbeck.
+This Matlab code allows to analyze the results of an online experiment.
 
 This experiment consisted of 2 versions, one in English and one in French, accessible through 2 separate links.
 

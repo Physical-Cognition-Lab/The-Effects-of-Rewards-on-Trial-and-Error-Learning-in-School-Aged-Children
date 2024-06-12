@@ -32,8 +32,8 @@ After importing the libraries we read the data
 
 ```{r, message=FALSE}
 ### Read data
-input = 'C:\\Users\\tomma\\OneDrive - Birkbeck, University of London\\VirtualTools_Rewards_2022\\SPSS\\database\\'
-output = 'C:\\Users\\tomma\\OneDrive - Birkbeck, University of London\\VirtualTools_Rewards_2022\\Analysis\\R_analysis\\Plots\\'
+input = #<path to data>
+output = #<path to saving location>
 
 Time = read_sav(paste(input, 'DatabaseSRATTTIME_2.sav', sep=''))
 Switch = read_sav(paste(input, 'databasetoolswitching.sav', sep=''))
