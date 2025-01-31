@@ -16,12 +16,12 @@ Read and prepare the data to be analyzed
 
 ```{r, message=FALSE}
 ### Importing libraries
-library(easystats)  # to compute estimate slopes and check model assumptions
 library(car)        # to extract anova table from linear models
 library(haven)      # to read spss database files
-library(tidyverse)    # plotting library
 library(patchwork)
 library(ggrepel)
+library(tidyverse)    # plotting library
+library(easystats)  # to compute estimate slopes and check model assumptions
 
 # Custom palettes
 palette1 <- c("#559ad1", "#ffb621",  "#CC79A7","#F46036")
@@ -32,13 +32,11 @@ After importing the libraries we read the data
 
 ```{r, message=FALSE}
 ### Read data
-input = #<path to data>
-output = #<path to saving location>
 
-Time = read_sav(paste(input, 'DatabaseSRATTTIME_2.sav', sep=''))
-Switch = read_sav(paste(input, 'databasetoolswitching.sav', sep=''))
-Distance = read_sav(paste(input, 'databasedistance.sav', sep=''))
-Ntools = read_sav(paste(input, 'databasenbtool.sav', sep=''))
+Time = read_sav('..\\..\\Data\\Databases\\DatabaseSRATTTIME_2.sav')
+Switch = read_sav('..\\..\\Data\\Databases\\databasetoolswitching.sav')
+Distance = read_sav('..\\..\\Data\\Databases\\databasedistance.sav')
+Ntools = read_sav('..\\..\\Data\\Databases\\databasenbtool.sav')
 
 ## making sure group is a factor and not a integer
 
@@ -58,12 +56,16 @@ We now can run the analysis. We will start by looking at the Time domain
 
 ```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
 ##### Model the data using simple linear model
+Time.base.sr = lm(sr~1, data = Time)
 Time.mod1.sr = lm(sr~group, data =  Time )
 Time.mod2.sr = lm(sr~age*group, data =  Time )
 
 # Compare the two models with or without age
 # this show the model with age is better
 test_likelihoodratio(Time.mod1.sr,Time.mod2.sr)
+
+# Bayes Factor
+BF.sr = test_bf(Time.base.sr, Time.mod2.sr)
 
 # Extracting parameters linear model
 parameters(Time.mod2.sr)
@@ -104,39 +106,34 @@ T1.1 = Time %>%
     geom_point(aes(y=sr), size=7)+
     geom_line(linewidth = 4.5)+
     geom_text(inherit.aes = F, data =slopePlot, aes(x = 10, y=115, label = R), size = 12)+
-    geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=105, label = P), size = 18)+
+    geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=100, label = P), size = 18)+
     facet_wrap(~ group, labeller = labeller(group = 
-      c('1' = 'PRG',
-        '2' = 'NRG',
+      c('1' = 'Positive reward group',
+        '2' = 'Negative reward group',
         '3' = 'Control')))+
     labs(x = 'Years', y = 'Success rate (%)')+
     ylim(NA, 120)+
     theme_classic(base_size = 40)+
     theme(axis.line = element_blank(),legend.position = "none")+
     scale_colour_manual(values=palette1)
-ggsave(paste(output,'SuccesRate.jpg', sep = ''), T1.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
 
 # Marginal Effect plot
 T1.2 = slopePlot %>%
   mutate(Significance = ifelse(p < 0.05, "True", "False")) %>%
   ggplot( aes(x = group, y = Coefficient, color = Significance))+
   geom_hline(yintercept = 0, linewidth=1.3, linetype = "dashed")+
-  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size=2.4, linewidth=1.5)+
+  geom_errorbar(aes(ymin = CI_low, ymax = CI_high),  width =0.1, alpha =0.3,linewidth=1.5)+
+  geom_pointrange(aes(ymin = Coefficient -SE, ymax = Coefficient +SE),size=2.4, linewidth=1.5)+
   theme_classic(base_size = 40)+
-  theme(axis.line = element_blank(),legend.position = "bottom")+
-  scale_x_discrete(name=NULL,label = c('PRG','NRG','Control'))+
+  theme(axis.line = element_blank(),legend.position = "bottom", axis.text.x = element_text(hjust = 0.5))+
+  scale_x_discrete(name=NULL,label = c('Positive\nreward group','Negative\nreward group','Control'))+
   coord_cartesian(xlim = c(1.12, 2.92))+
   scale_colour_manual(values=palette2)+
   labs(y = 'Effect of Age')+
   scale_y_continuous(n.breaks=4)
-ggsave(paste(output,'slope_Time_sr_plot.jpg', sep = ''), T1.2, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
-
 
 combT1 = T1.1 / T1.2 +
-  plot_layout(heights = c(2, 1.2))
-
-ggsave(paste(output,'SuccesRateCombo.jpg', sep = ''),combT1 , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
-
+  plot_layout(heights = c(3, 1.2))
 
 combT1
 ```
@@ -147,13 +144,17 @@ No significant result for time per attempt
 
 ```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
 ##### Model the data using simple linear model
+Time.base.timeattempt = lm(timeperattempt~1, data =  Time )
 Time.mod1.timeattempt = lm(timeperattempt~group, data =  Time )
 Time.mod2.timeattempt = lm(timeperattempt~age*group, data =  Time )
 
 # Compare the two models with or without age
-# both models here are not significative I'll use the 
+# both models here are not significant I'll use the 
 # one with age but doesn't make a lot of sense
 test_likelihoodratio(Time.mod2.timeattempt,Time.mod1.timeattempt)
+
+# Bayes Factor
+BF.timeattempt = test_bf(Time.base.timeattempt, Time.mod1.timeattempt)
 
 # Extracting parameters linear model
 parameters(Time.mod1.timeattempt)
@@ -183,16 +184,14 @@ T2 = ggplot(Time, aes(x=group, y = timeperattempt, color = group ))+
   geom_pointrange(inherit.aes = F, data = Mean.T2 , aes(x= group, y = Mean, ymin = Mean-SE, ymax = Mean+SE, color = group), size=3,linewidth=2.5)+
   geom_text(inherit.aes = F, data = Mean.T2, aes(x =c(1.3,2.3,3.3), y= Mean, label= M),size = 10)+
   scale_colour_manual(values=palette1)+
-  scale_x_discrete(label = c('PRG','NRG','Control'))+
+  scale_x_discrete(label = c('Positive\nreward group','Negative\nreward group','Control'))+
   scale_y_continuous(labels=function(x)x/1000)+
   labs(y = "Attempt time (sec)")+
   coord_cartesian(xlim = c(1.13, 2.9))+
   theme_classic(base_size = 40)+
-  theme(axis.line = element_blank(),legend.position = "none",
+  theme(axis.line = element_blank(),legend.position = "none",axis.text.x = element_text(hjust = 0.5),
         axis.title.x = element_blank())
 
-
-ggsave(paste(output,'TimePerAttempt.jpg', sep = ''), T2 , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
 T2
 ```
 
@@ -200,12 +199,16 @@ T2
 
 ```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
 ##### Model the data using simple linear model
+Time.base.attempttr = lm(attemptpertrial~1, data =  Time )
 Time.mod1.attempttr = lm(attemptpertrial~group, data =  Time )
 Time.mod2.attempttr = lm(attemptpertrial~age*group, data =  Time )
 
 # Compare the two models with or without age
 # this show the model with age is better
-test_likelihoodratio(Time.mod1.attempttr,Time.mod2.attempttr)
+test_likelihoodratio(Time.mod1.attempttr, Time.mod2.attempttr)
+
+# Bayes Factor
+BF.attempttr = test_bf(Time.base.attempttr, Time.mod2.attempttr)
 
 # Extracting parameters linear model
 parameters(Time.mod2.attempttr)
@@ -246,37 +249,35 @@ T3.1 = Time %>%
     geom_point(aes(y=attemptpertrial), size=7)+
     geom_line(linewidth = 4.5)+
     geom_text(inherit.aes = F, data =slopePlot, aes(x = 10, y=6.8, label = R), size = 12)+
-    geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=6.2, label = P), size = 18)+
+    geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=5.8, label = P), size = 18)+
     facet_wrap(~ group, labeller = labeller(group = 
-      c('1' = 'PRG',
-        '2' = 'NRG',
+      c('1' = 'Positive reward group',
+        '2' = 'Negative reward group',
         '3' = 'Control')))+
     labs(x = 'Years', y = '# of attempts')+
     ylim(NA, 7.1)+
     theme_classic(base_size = 40)+
     theme(axis.line = element_blank(),legend.position = "none")+
     scale_colour_manual(values=palette1)
-ggsave(paste(output,'AttemptsPerTrial.jpg', sep = ''), T3.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
 
 # Marginal Effect plot
 T3.2 = slopePlot %>%
   mutate(Significance = ifelse(p < 0.05, "True", "False")) %>%
   ggplot( aes(x = group, y = Coefficient, color = Significance))+
   geom_hline(yintercept = 0, linewidth=1.3, linetype = "dashed")+
-  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size=2.4, linewidth=1.5)+
+  geom_errorbar(aes(ymin = CI_low, ymax = CI_high),  width =0.1, alpha =0.3,linewidth=1.5)+
+  geom_pointrange(aes(ymin = Coefficient -SE, ymax = Coefficient +SE),size=2.4, linewidth=1.5)+
   theme_classic(base_size = 40)+
-  theme(axis.line = element_blank(),legend.position = "bottom")+
-  scale_x_discrete(name=NULL,label = c('PRG','NRG','Control'))+
+  theme(axis.line = element_blank(),legend.position = "bottom",axis.text.x = element_text(hjust = 0.5))+
+  scale_x_discrete(name=NULL,label = c('Positive\nreward group','Negative\nreward group','Control'))+
   coord_cartesian(xlim = c(1.12, 2.92))+
   scale_colour_manual(values=palette2)+
   labs(y = 'Effect of Age')+
   scale_y_continuous(n.breaks=4)
-ggsave(paste(output,'slope_Time_attempttr_plot.jpg', sep = ''), T3.2, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
- 
+
 combT3 = T3.1 / T3.2 +
   plot_layout(heights = c(2, 1.2))
 
-ggsave(paste(output,'AttemptsPerTrialCombo.jpg', sep = ''),combT3 , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
 combT3
 ```
 
@@ -284,12 +285,16 @@ combT3
 
 ```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
 ##### Model the data using simple linear model
+Switch.base = lm(toolswitching ~ 1, data = Switch)
 Switch.mod1 = lm(toolswitching~group, data =  Switch )
 Switch.mod2 = lm(toolswitching~age*group, data =  Switch )
 
 # Compare the two models with or without age
 # this show the model with age is better
 test_likelihoodratio(Switch.mod1,Switch.mod2)
+
+# Bayes Factor
+BF.switch = test_bf(Switch.base, Switch.mod2)
 
 # Extracting parameters linear model
 parameters(Switch.mod2)
@@ -336,35 +341,33 @@ Ts.1 = Switch %>%
     geom_text(inherit.aes = F, data =slopePlot, aes(x = 10, y=118, label = R), size = 12)+
     geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=96, label = P), size = 18)+
     facet_wrap(~ group, labeller = labeller(group = 
-      c('1' = 'PRG',
-        '2' = 'NRG',
+      c('1' = 'Positive reward group',
+        '2' = 'Negative reward group',
         '3' = 'Control')))+
     labs(x = 'Years', y = 'Tool switching (%)')+
     ylim(NA,123)+
     theme_classic(base_size = 40)+
     theme(axis.line = element_blank(),legend.position = "none")+
     scale_colour_manual(values=palette1)
-ggsave(paste(output,'ToolSwitching.jpg', sep = ''), Ts.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
 
 # Marginal Effect plot
 Ts.2 = slopePlot %>%
   mutate(Significance = ifelse(p < 0.05, "True", "False")) %>%
   ggplot( aes(x = group, y = Coefficient, color = Significance))+
   geom_hline(yintercept = 0, linewidth=1.3, linetype = "dashed")+
-  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size=2.4, linewidth=1.5)+
+  geom_errorbar(aes(ymin = CI_low, ymax = CI_high),  width =0.1, alpha =0.3,linewidth=1.5)+
+  geom_pointrange(aes(ymin = Coefficient -SE, ymax = Coefficient +SE),size=2.4, linewidth=1.5)+
   theme_classic(base_size = 40)+
-  theme(axis.line = element_blank(),legend.position = "bottom")+
-  scale_x_discrete(name=NULL,label = c('PRG','NRG','Control'))+
+  theme(axis.line = element_blank(),legend.position = "bottom",axis.text.x = element_text(hjust = 0.5))+
+  scale_x_discrete(name=NULL,label = c('Positive\nreward group','Negative\nreward group','Control'))+
   coord_cartesian(xlim = c(1.12, 2.92))+
   scale_colour_manual(values=palette2)+
   labs(y = 'Effect of Age')+
   scale_y_continuous(n.breaks=4)
-ggsave(paste(output,'slope_Switch_plot.jpg', sep = ''), Ts.2, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
- 
+
 combTs = Ts.1 / Ts.2 +
   plot_layout(heights = c(2, 1.2))
 
-ggsave(paste(output,'ToolSwitchingCombo.jpg', sep = ''),combTs , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
 combTs
 ```
 
@@ -372,12 +375,16 @@ combTs
 
 ```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
 ##### Model the data using simple linear model
+Ntools.base = lm(nbtool~1, data =  Ntools )
 Ntools.mod1 = lm(nbtool~group, data =  Ntools )
 Ntools.mod2 = lm(nbtool~age*group, data =  Ntools )
 
 #Compare the two models with or without age
 # this show the model with age is better
 test_likelihoodratio(Ntools.mod1,Ntools.mod2)
+
+# Bayes Factor
+BF.ntools = test_bf(Ntools.base, Ntools.mod2)
 
 # Extracting parameters linear model
 parameters(Ntools.mod2)
@@ -423,35 +430,33 @@ N.1 = Ntools %>%
     geom_text(inherit.aes = F, data =slopePlot, aes(x = 10, y=3.6, label = R), size = 12)+
     geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=3.05, label = P), size = 18)+
     facet_wrap(~ group, labeller = labeller(group = 
-      c('1' = 'PRG',
-        '2' = 'NRG',
+      c('1' = 'Positive reward group',
+        '2' = 'Negative reward group',
         '3' = 'Control')))+
     labs(x = 'Years', y = '# of tools')+
     ylim(NA, 3.8)+
     theme_classic(base_size = 40)+
     theme(axis.line = element_blank(),legend.position = "none")+
     scale_colour_manual(values=palette1)
-ggsave(paste(output,'NumberOfTools.jpg', sep = ''), N.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
 
 # Marginal Effect plot
 N.2 = slopePlot %>%
   mutate(Significance = ifelse(p < 0.05, "True", "False")) %>%
   ggplot( aes(x = group, y = Coefficient, color = Significance))+
   geom_hline(yintercept = 0, linewidth=1.3, linetype = "dashed")+
-  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size=2.4, linewidth=1.5)+
+  geom_errorbar(aes(ymin = CI_low, ymax = CI_high),  width =0.1, alpha =0.3,linewidth=1.5)+
+  geom_pointrange(aes(ymin = Coefficient -SE, ymax = Coefficient +SE),size=2.4, linewidth=1.5)+
   theme_classic(base_size = 40)+
-  theme(axis.line = element_blank(),legend.position = "bottom")+
-  scale_x_discrete(name=NULL,label = c('PRG','NRG','Control'))+
+  theme(axis.line = element_blank(),legend.position = "bottom",axis.text.x = element_text(hjust = 0.5))+
+  scale_x_discrete(name=NULL,label = c('Positive\nreward group','Negative\nreward group','Control'))+
   coord_cartesian(xlim = c(1.12, 2.92))+
   scale_colour_manual(values=palette2)+
   labs(y = 'Effect of Age')+
   scale_y_continuous(n.breaks=4)
-ggsave(paste(output,'slope_Ntools_plot.jpg', sep = ''), N.2, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
 
 combN = N.1 / N.2 +
   plot_layout(heights = c(2, 1.2))
 
-ggsave(paste(output,'NumberOfToolsCombo.jpg', sep = ''),combN , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
 combN
 ```
 
@@ -459,12 +464,16 @@ combN
 
 ```{r, message=FALSE, fig.height=10, fig.width=10, fig.align='center', dpi = 300, warning=FALSE}
 ##### Model the data using simple linear model
+Distance.base = lm(distance~1, data =  Distance )
 Distance.mod1 = lm(distance~group, data =  Distance )
 Distance.mod2 = lm(distance~age*group, data =  Distance )
 
 #Compare the two models with or without age
 # this show the model with age is better
 test_likelihoodratio(Distance.mod1,Distance.mod2)
+
+# Bayes Factor
+BF.distance = test_bf(Distance.base, Distance.mod2)
 
 # Extracting parameters linear model
 parameters(Distance.mod2)
@@ -510,35 +519,33 @@ D.1 = Distance %>%
       geom_text(inherit.aes = F, data =slopePlot, aes(x = 10, y=320, label = R), size = 12)+
     geom_text( inherit.aes = F, data =slopePlot, aes(x = 10, y=265, label = P), size = 18)+
     facet_wrap(~ group, labeller = labeller(group = 
-      c('1' = 'PRG',
-        '2' = 'NRG',
+      c('1' = 'Positive reward group',
+        '2' = 'Negative reward group',
         '3' = 'Control')))+
     ylim(NA, 335)+
     labs(x = 'Years', y = 'Distance (pixels)')+
     theme_classic(base_size = 40)+
     theme(axis.line = element_blank(),legend.position = "none")+
     scale_colour_manual(values=palette1)
-ggsave(paste(output,'Distance.jpg', sep = ''), D.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
 
 # Marginal Effect plot
 D.2 = slopePlot %>%
   mutate(Significance = ifelse(p < 0.05, "True", "False")) %>%
   ggplot( aes(x = group, y = Coefficient, color = Significance))+
   geom_hline(yintercept = 0, linewidth=1.3, linetype = "dashed")+
-  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size=2.4, linewidth=1.5)+
+  geom_errorbar(aes(ymin = CI_low, ymax = CI_high),  width =0.1, alpha =0.3,linewidth=1.5)+
+  geom_pointrange(aes(ymin = Coefficient -SE, ymax = Coefficient +SE),size=2.4, linewidth=1.5)+
   theme_classic(base_size = 40)+
-  theme(axis.line = element_blank(),legend.position = "bottom")+
-  scale_x_discrete(name=NULL,label = c('PRG','NRG','Control'))+
+  theme(axis.line = element_blank(),legend.position = "bottom",axis.text.x = element_text(hjust = 0.5))+
+  scale_x_discrete(name=NULL,label = c('Positive\nreward group','Negative\nreward group','Control'))+
   coord_cartesian(xlim = c(1.12, 2.92))+
   scale_colour_manual(values=palette2)+
   labs(y = 'Effect of Age')+
   scale_y_continuous(n.breaks=4)
-ggsave(paste(output,'slope_Distance_plot.jpg', sep = ''), D.1, width = 1920*3, height = 1080*3, units = "px", dpi = 300)
- 
+
 combD = D.1 / D.2 +
   plot_layout(heights = c(2, 1.2))
 
-ggsave(paste(output,'DistanceCombo.jpg', sep = ''),combD , width = 1920*3, height = 1080*3, units = "px", dpi = 300)
 combD
 ```
 
@@ -562,9 +569,9 @@ comb1 = T1.1 / T1.2 /plot_spacer()/ T3.1 / T3.2 +
 
 comb1
 
-ggsave(paste(output,'FinalPlot_Time.jpg', sep = ''),comb1 , width = 1920*3, height = 1080*8, units = "px", dpi = 300)
-ggsave(paste(output,'FinalPlot_Time.svg', sep = ''),comb1 , width = 1920*3, height = 1080*8, units = "px", dpi = 300)
-ggsave(paste(output,'FinalPlot_Time.tiff', sep = ''),comb1 , width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+ggsave('..\\..\\Results\\Plot\\FinalPlot_Time.jpg',comb1 , width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+ggsave('..\\..\\Results\\Plot\\FinalPlot_Time.svg',comb1 , width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+ggsave('..\\..\\Results\\Plot\\FinalPlot_Time.tiff',comb1 , width = 1920*3, height = 1080*8, units = "px", dpi = 300)
 ```
 
 ```{r, fig.height=23, fig.width=11.7, fig.align='center', dpi = 300}
@@ -585,8 +592,8 @@ comb2 =  N.1_p / N.2_p / plot_spacer()/ Ts.1_p / Ts.2_p / plot_spacer() /D.1_p/ 
 
 comb2
 
-ggsave(paste(output,'FinalPlot_Int.jpg', sep = ''), comb2, width = 1920*3, height = 1080*8, units = "px", dpi = 300)
-ggsave(paste(output,'FinalPlot_Int.svg', sep = ''), comb2, width = 1920*3, height = 1080*8, units = "px", dpi = 300)
-ggsave(paste(output,'FinalPlot_Int.tiff', sep = ''), comb2, width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+ggsave('..\\..\\Results\\Plot\\FinalPlot_Int.jpg', comb2, width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+ggsave('..\\..\\Results\\Plot\\FinalPlot_Int.svg', comb2, width = 1920*3, height = 1080*8, units = "px", dpi = 300)
+ggsave('..\\..\\Results\\Plot\\FinalPlot_Int.tiff', comb2, width = 1920*3, height = 1080*8, units = "px", dpi = 300)
 
 ```

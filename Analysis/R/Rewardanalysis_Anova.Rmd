@@ -30,13 +30,11 @@ After importing the libraries we read the data
 
 ```{r, message=FALSE}
 ### Read data
-input = #<path to data>
-output = #<path to saving location>
-  
-Time = read_sav(paste(input, 'DatabaseSRATTTIME_2.sav', sep=''))
-Switch = read_sav(paste(input, 'databasetoolswitching.sav', sep=''))
-Distance = read_sav(paste(input, 'databasedistance.sav', sep=''))
-Ntools = read_sav(paste(input, 'databasenbtool.sav', sep=''))
+
+Time = read_sav('..\\..\\Data\\Databases\\DatabaseSRATTTIME_2.sav')
+Switch = read_sav('..\\..\\Data\\Databases\\databasetoolswitching.sav')
+Distance = read_sav('..\\..\\Data\\Databases\\databasedistance.sav')
+Ntools = read_sav('..\\..\\Data\\Databases\\databasenbtool.sav')
 
 ## making sure group is a factor and not a integer
 
@@ -178,25 +176,26 @@ SR = Time%>%
               annotation=c("*"), tip_length=0, color = 'black',
               textsize = 30,size = 2.5, vjust = 0.5)+
   scale_colour_manual(values=palette1)+
-  scale_x_discrete(label = c('PRG','NRG','Control'))+
+  scale_x_discrete(label = c('Positive\nreward group','Negative\nreward group','Control'))+
   labs(y = "Success rate (%)")+
   coord_cartesian(xlim = c(1.13, 2.9), ylim = c(10,114))+
   theme_classic(base_size = 40)+
   theme(legend.position = "none",
-        axis.title.x = element_blank(), axis.line = element_blank())
+        axis.title.x = element_blank(), axis.line = element_blank(),         axis.text.x = element_text(hjust = 0.5))
 
 TimeXAttemp = Time%>%
   ggplot( aes(x = group, y = timeperattempt,color = group))+
   geom_point(position = position_jitterdodge(),size=7, alpha=0.35)+
     stat_summary(fun.data = mean_se, geom = "pointrange",size=3,linewidth=2.5)+
   scale_colour_manual(values=palette1)+
-  scale_x_discrete(label = c('PRG','NRG','Control'))+
+  scale_x_discrete(label = c('Positive\nreward group','Negative\nreward group','Control'))+
   scale_y_continuous(labels=function(x)x/1000)+
   labs(y = "Attempt time (sec)")+
   coord_cartesian(xlim = c(1.13, 2.9))+
   theme_classic(base_size = 40)+
   theme(legend.position = "none",
-        axis.title.x = element_blank(), axis.line = element_blank())
+        axis.title.x = element_blank(), axis.line = element_blank(),
+        axis.text.x = element_text(hjust = 0.5))
 
 AttemptXTrial = Time%>%
   ggplot( aes(x = group, y = attemptpertrial,color = group))+
@@ -206,12 +205,13 @@ AttemptXTrial = Time%>%
               annotation=c("**"), tip_length=0, color = 'black',
               textsize = 30,size = 2.5, vjust = 0.5)+
   scale_colour_manual(values=palette1)+
-  scale_x_discrete(label = c('PRG','NRG','Control'))+
+  scale_x_discrete(label = c('Positive\nreward group','Negative\nreward group','Control'))+
   labs(y = "# of attempts")+
   coord_cartesian(xlim = c(1.13, 2.9), ylim = c(1,6.5))+
   theme_classic(base_size = 40)+
   theme(legend.position = "none",
-        axis.title.x = element_blank(), axis.line = element_blank())
+        axis.title.x = element_blank(), axis.line = element_blank(),
+        axis.text.x = element_text(hjust = 0.5))
 
 Switch_p = Switch%>%
   ggplot( aes(x = group, y = toolswitching,color = group))+
@@ -221,12 +221,13 @@ Switch_p = Switch%>%
               annotation=c("*"), tip_length=0, color = 'black',
               textsize = 30,size = 2.5, vjust = 0.5)+
   scale_colour_manual(values=palette1)+
-  scale_x_discrete(label = c('PRG','NRG','Control'))+
+  scale_x_discrete(label = c('Positive\nreward group','Negative\nreward group','Control'))+
   labs(y = "Tool switching (%)")+
   coord_cartesian(xlim = c(1.13, 2.9), ylim = c(0,110))+
   theme_classic(base_size = 40)+
   theme(legend.position = "none",
-        axis.title.x = element_blank(), axis.line = element_blank())
+        axis.title.x = element_blank(), axis.line = element_blank(),
+        axis.text.x = element_text(hjust = 0.5))
 
 
 NumberTool = Ntools%>%
@@ -237,24 +238,26 @@ NumberTool = Ntools%>%
               annotation=c("**","*"), tip_length=0, color = 'black',
               textsize = 30,size = 2.5, vjust = 0.5)+
   scale_colour_manual(values=palette1)+
-  scale_x_discrete(label = c('PRG','NRG','Control'))+
+  scale_x_discrete(label = c('Positive\nreward group','Negative\nreward group','Control'))+
   labs(y = "# of tools")+
-  coord_cartesian(xlim = c(1.13, 2.9), ylim = c(0.5,3.6))+
+  coord_cartesian(xlim = c(1.13, 2.9), ylim = c(0.5,3.7))+
   theme_classic(base_size = 40)+
   theme(legend.position = "none",
-        axis.title.x = element_blank(), axis.line = element_blank())
+        axis.title.x = element_blank(), axis.line = element_blank(),
+        axis.text.x = element_text(hjust = 0.5))
 
 Distance_p = Distance%>%
   ggplot( aes(x = group, y = distance,color = group))+
   geom_point(position = position_jitterdodge(),size=7, alpha=0.35)+
   stat_summary(fun.data = mean_se, geom = "pointrange",size=3,linewidth=2.5)+
   scale_colour_manual(values=palette1)+
-  scale_x_discrete(label = c('PRG','NRG','Control'))+
+  scale_x_discrete(label = c('Positive\nreward group','Negative\nreward group','Control'))+
   labs(y = "Distance (pixels)")+
   coord_cartesian(xlim = c(1.13, 2.9))+
   theme_classic(base_size = 40)+
   theme(legend.position = "none",
-        axis.title.x = element_blank(), axis.line = element_blank())
+        axis.title.x = element_blank(), axis.line = element_blank(),
+        axis.text.x = element_text(hjust = 0.5))
 
 FIN = wrap_plots(SR, AttemptXTrial, TimeXAttemp, NumberTool, Switch_p, Distance_p, ncol = 3)+
   plot_annotation(tag_levels = 'A') +
@@ -262,12 +265,11 @@ FIN = wrap_plots(SR, AttemptXTrial, TimeXAttemp, NumberTool, Switch_p, Distance_
 
 
 
-ggsave(filename = paste(output,'FinalPlotAnova.svg', sep = ''), FIN,
+ggsave(filename = '..\\..\\Results\\Plot\\FinalPlotAnova.svg', FIN,
        width = 23*1.5, height = 11.7*1.5, units = "in", dpi = 300)
-
-ggsave(filename = paste(output,'FinalPlotAnova.jpg', sep = ''), FIN,
+ggsave('..\\..\\Results\\Plot\\FinalPlotAnova.jpg', FIN,
        width = 23*1.5, height = 11.7*1.5, units = "in", dpi = 300)
-ggsave(filename = paste(output,'FinalPlotAnova.tiff', sep = ''), FIN,
+ggsave('..\\..\\Results\\Plot\\FinalPlotAnova.tiff', FIN,
        width = 23*1.5, height = 11.7*1.5, units = "in", dpi = 300)
 
 FIN
